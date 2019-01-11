@@ -47,10 +47,10 @@
         }
 
         .popup_container {
-            position: absolute;
+            position: fixed;
             z-index: 9999;
-            width: 60%;
-            height: 100%;
+            width: 50%;
+            height: 80%;
             margin: 50px 300px;
         }
 
@@ -65,14 +65,12 @@
 <script type="text/javascript">
         $(document).ready(function () {
 
-
                 var img_len = $("img").length
                 var fail_len = $("img.Fail").length
                 var pass_len = $("img.Pass").length
                 $(".pass_total").text(pass_len)
                 $(".fail_total").text(fail_len)
                 $(".all_total").text(img_len)
-
 
             $("button#passbtn").click(function () {
                 $("div.Fail").hide()
@@ -105,12 +103,311 @@
 </div>
 <div id="main_container">
 <div id="actions">
-<button id="passbtn">Pass</button>&nbsp&nbsp<i class="pass_total"> 10</i>&nbsp&nbsp&nbsp&nbsp
-<button id="failbtn">Fail</button>&nbsp&nbsp<i class="fail_total"> 10</i>&nbsp&nbsp&nbsp&nbsp
-<button id="Allbtn">All</button>&nbsp&nbsp<i class="all_total"> 10</i>&nbsp&nbsp&nbsp&nbsp
+<button id="passbtn">Pass</button><i class="pass_total"></i>
+<button id="failbtn">Fail</button><i class="fail_total"></i>
+<button id="Allbtn">All</button><i class="all_total"></i>
 </div>
-<div id="container"><div class="Pass"><p>Case Mix Index (CMI) Comparison</p>
-    <img alt="Case Mix Index (CMI) Comparison" class="Pass screenshot" id="Case Mix Index (CMI) Comparison" src="../../auto_results/screenshots/Case Mix Index (CMI) Comparison.png"/><p style="display:none">report_separator-Case Mix Index (CMI) Comparison#
+<div id="container"><div class="Pass"><p>Summary by Primary Flag</p><img alt="Summary by Primary Flag" class="Pass screenshot" id="Summary by Primary Flag" src="../../auto_results/screenshots/Summary by Primary Flag.png"/><p style="display:none">write_test_result_report_word: Medicare Post-Acute Care (PAC) DRG Frequency
+write_test_result_report_excel: Medicare Post-Acute Care (PAC) DRG Frequency
+save_reports_screenshot_as_html: Medicare Post-Acute Care (PAC) DRG Frequency
+report_names:&gt;&gt;&gt;&gt;&gt;Summary by Primary Flag
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: Summary by Primary Flag
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s uninitialized
+wait_document_completed---wait: 4s uninitialized
+wait_document_completed---wait: 5s interactive
+wait_document_completed---wait: 6s complete
+save_html_resource: Summary by Primary Flag
+wait_report_title_contains=Summary by Primary Flag=Pass
+close browser
+</p></div><div class="Pass"><p>Medicare Post-Acute Care (PAC) DRG Frequency</p><img alt="Medicare Post-Acute Care (PAC) DRG Frequency" class="Pass screenshot" id="Medicare Post-Acute Care (PAC) DRG Frequency" src="../../auto_results/screenshots/Medicare Post-Acute Care (PAC) DRG Frequency.png"/><p style="display:none">write_test_result_report_word: DRG Summary by Grouper Version - MDC
+write_test_result_report_excel: DRG Summary by Grouper Version - MDC
+save_reports_screenshot_as_html: DRG Summary by Grouper Version - MDC
+report_names:&gt;&gt;&gt;&gt;&gt;Medicare Post-Acute Care (PAC) DRG Frequency
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: Medicare Post-Acute Care (PAC) DRG Frequency
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s uninitialized
+wait_document_completed---wait: 4s uninitialized
+wait_document_completed---wait: 5s interactive
+wait_document_completed---wait: 6s complete
+save_html_resource: Medicare Post-Acute Care (PAC) DRG Frequency
+wait_report_title_contains=Frequency=Pass
+close browser
+</p></div><div class="Pass"><p>DRG Summary by Grouper Version - MDC</p><img alt="DRG Summary by Grouper Version - MDC" class="Pass screenshot" id="DRG Summary by Grouper Version - MDC" src="../../auto_results/screenshots/DRG Summary by Grouper Version - MDC.png"/><p style="display:none">write_test_result_report_word: DRG Illness Severity Score Comparison
+write_test_result_report_excel: DRG Illness Severity Score Comparison
+save_reports_screenshot_as_html: DRG Illness Severity Score Comparison
+report_names:&gt;&gt;&gt;&gt;&gt;DRG Summary by Grouper Version - MDC
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: DRG Summary by Grouper Version - MDC
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s uninitialized
+wait_document_completed---wait: 4s uninitialized
+wait_document_completed---wait: 5s interactive
+wait_document_completed---wait: 6s complete
+save_html_resource: DRG Summary by Grouper Version - MDC
+wait_report_title_contains=DRG Summary by Grouper Version - MDC=Pass
+close browser
+</p></div><div class="Fail"><p>DRG Illness Severity Score Comparison</p><img alt="DRG Illness Severity Score Comparison" class="Fail screenshot" id="DRG Illness Severity Score Comparison" src="../../auto_results/screenshots/DRG Illness Severity Score Comparison.png"/><p style="display:none">write_test_result_report_word: DRG Frequency
+write_test_result_report_excel: DRG Frequency
+save_reports_screenshot_as_html: DRG Frequency
+report_names:&gt;&gt;&gt;&gt;&gt;DRG Illness Severity Score Comparison
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: DRG Illness Severity Score Comparison
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+Message: 
+None
+close browser
+</p></div><div class="Pass"><p>DRG Frequency</p><img alt="DRG Frequency" class="Pass screenshot" id="DRG Frequency" src="../../auto_results/screenshots/DRG Frequency.png"/><p style="display:none">write_test_result_report_word: Flag Management Setting Audit
+write_test_result_report_excel: Flag Management Setting Audit
+save_reports_screenshot_as_html: Flag Management Setting Audit
+report_names:&gt;&gt;&gt;&gt;&gt;DRG Frequency
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: DRG Frequency
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s uninitialized
+wait_document_completed---wait: 4s loading
+wait_document_completed---wait: 5s interactive
+wait_document_completed---wait: 6s complete
+save_html_resource: DRG Frequency
+wait_report_title_contains=Frequency=Pass
+close browser
+</p></div><div class="Pass"><p>Flag Management Setting Audit</p><img alt="Flag Management Setting Audit" class="Pass screenshot" id="Flag Management Setting Audit" src="../../auto_results/screenshots/Flag Management Setting Audit.png"/><p style="display:none">write_test_result_report_word: DRG Contribution to CMI
+write_test_result_report_excel: DRG Contribution to CMI
+save_reports_screenshot_as_html: DRG Contribution to CMI
+report_names:&gt;&gt;&gt;&gt;&gt;Flag Management Setting Audit
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: Flag Management Setting Audit
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s interactive
+wait_document_completed---wait: 3s interactive
+wait_document_completed---wait: 4s interactive
+wait_document_completed---wait: 5s interactive
+wait_document_completed---wait: 6s interactive
+wait_document_completed---wait: 7s interactive
+wait_document_completed---wait: 8s interactive
+wait_document_completed---wait: 9s interactive
+wait_document_completed---wait: 10s interactive
+wait_document_completed---wait: 11s interactive
+wait_document_completed---wait: 12s interactive
+wait_document_completed---wait: 13s interactive
+wait_document_completed---wait: 14s interactive
+wait_document_completed---wait: 15s interactive
+wait_document_completed---wait: 16s interactive
+wait_document_completed---wait: 17s interactive
+wait_document_completed---wait: 18s interactive
+wait_document_completed---wait: 19s interactive
+wait_document_completed---wait: 20s interactive
+wait_document_completed---wait: 21s interactive
+wait_document_completed---wait: 22s interactive
+wait_document_completed---wait: 23s interactive
+wait_document_completed---wait: 24s interactive
+wait_document_completed---wait: 25s interactive
+wait_document_completed---wait: 26s interactive
+wait_document_completed---wait: 27s interactive
+wait_document_completed---wait: 28s interactive
+wait_document_completed---wait: 29s interactive
+wait_document_completed---wait: 30s interactive
+wait_document_completed---wait: 31s interactive
+wait_document_completed---wait: 32s interactive
+wait_document_completed---wait: 33s interactive
+wait_document_completed---wait: 34s interactive
+wait_document_completed---wait: 35s interactive
+wait_document_completed---wait: 36s interactive
+wait_document_completed---wait: 37s interactive
+wait_document_completed---wait: 38s interactive
+wait_document_completed---wait: 39s interactive
+wait_document_completed---wait: 40s interactive
+wait_document_completed---wait: 41s interactive
+wait_document_completed---wait: 42s interactive
+wait_document_completed---wait: 43s interactive
+wait_document_completed---wait: 44s interactive
+wait_document_completed---wait: 45s interactive
+wait_document_completed---wait: 46s interactive
+wait_document_completed---wait: 47s interactive
+wait_document_completed---wait: 48s interactive
+wait_document_completed---wait: 49s interactive
+wait_document_completed---wait: 50s interactive
+wait_document_completed---wait: 51s interactive
+wait_document_completed---wait: 52s interactive
+wait_document_completed---wait: 53s interactive
+wait_document_completed---wait: 54s interactive
+wait_document_completed---wait: 55s interactive
+wait_document_completed---wait: 56s interactive
+wait_document_completed---wait: 57s interactive
+wait_document_completed---wait: 58s interactive
+wait_document_completed---wait: 59s interactive
+wait_document_completed---wait: 60s interactive
+wait_document_completed---wait: 61s interactive
+wait_document_completed---wait: 62s interactive
+wait_document_completed---wait: 63s interactive
+wait_document_completed---wait: 64s interactive
+wait_document_completed---wait: 65s interactive
+wait_document_completed---wait: 66s interactive
+wait_document_completed---wait: 67s interactive
+wait_document_completed---wait: 68s interactive
+wait_document_completed---wait: 69s interactive
+wait_document_completed---wait: 70s interactive
+wait_document_completed---wait: 71s interactive
+wait_document_completed---wait: 72s interactive
+wait_document_completed---wait: 73s interactive
+wait_document_completed---wait: 74s interactive
+wait_document_completed---wait: 75s interactive
+wait_document_completed---wait: 76s interactive
+wait_document_completed---wait: 77s interactive
+wait_document_completed---wait: 78s interactive
+wait_document_completed---wait: 79s interactive
+wait_document_completed---wait: 80s interactive
+wait_document_completed---wait: 81s interactive
+wait_document_completed---wait: 82s interactive
+wait_document_completed---wait: 83s interactive
+wait_document_completed---wait: 84s interactive
+wait_document_completed---wait: 85s interactive
+wait_document_completed---wait: 86s interactive
+wait_document_completed---wait: 87s interactive
+wait_document_completed---wait: 88s interactive
+wait_document_completed---wait: 89s interactive
+wait_document_completed---wait: 90s interactive
+wait_document_completed---wait: 91s interactive
+wait_document_completed---wait: 92s interactive
+wait_document_completed---wait: 93s interactive
+wait_document_completed---wait: 94s interactive
+wait_document_completed---wait: 95s interactive
+wait_document_completed---wait: 96s interactive
+wait_document_completed---wait: 97s interactive
+wait_document_completed---wait: 98s interactive
+wait_document_completed---wait: 99s interactive
+wait_document_completed---wait: 100s interactive
+wait_document_completed---wait: 101s interactive
+wait_document_completed---wait: 102s interactive
+wait_document_completed---wait: 103s interactive
+wait_document_completed---wait: 104s interactive
+wait_document_completed---wait: 105s interactive
+wait_document_completed---wait: 106s interactive
+wait_document_completed---wait: 107s interactive
+wait_document_completed---wait: 108s interactive
+wait_document_completed---wait: 109s interactive
+wait_document_completed---wait: 110s interactive
+wait_document_completed---wait: 111s interactive
+wait_document_completed---wait: 112s interactive
+wait_document_completed---wait: 113s interactive
+wait_document_completed---wait: 114s interactive
+wait_document_completed---wait: 115s interactive
+wait_document_completed---wait: 116s interactive
+wait_document_completed---wait: 117s interactive
+wait_document_completed---wait: 118s interactive
+wait_document_completed---wait: 119s interactive
+wait_document_completed, page takes too long to response: Flag Management Setting Audit Report
+save_html_resource: Flag Management Setting Audit
+wait_report_title_contains=Flag Management Setting Audit=Pass
+close browser
+</p></div><div class="Pass"><p>DRG Contribution to CMI</p><img alt="DRG Contribution to CMI" class="Pass screenshot" id="DRG Contribution to CMI" src="../../auto_results/screenshots/DRG Contribution to CMI.png"/><p style="display:none">write_test_result_report_word: DRG Clinical Profile
+write_test_result_report_excel: DRG Clinical Profile
+save_reports_screenshot_as_html: DRG Clinical Profile
+report_names:&gt;&gt;&gt;&gt;&gt;DRG Contribution to CMI
 Find Element by:id, value:txtLoginid
 Find Element by:id, value:txtPassword
 Find Element by:id, value:btnloginText
@@ -119,7 +416,269 @@ wait_element_invisibility by: class name, by_target: modalOverlay
 wait_document_completed---wait: 1s complete
 Find Element by:id, value:aSlideMenuSelModuleSIP101
 Find Element by:id, value:aIPModuleWorkplans
-wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Enterprise Reports"]
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: DRG Contribution to CMI
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s interactive
+wait_document_completed---wait: 4s complete
+save_html_resource: DRG Contribution to CMI
+wait_report_title_contains=DRG Contribution to CMI=Pass
+close browser
+</p></div><div class="Pass"><p>DRG Clinical Profile</p><img alt="DRG Clinical Profile" class="Pass screenshot" id="DRG Clinical Profile" src="../../auto_results/screenshots/DRG Clinical Profile.png"/><p style="display:none">write_test_result_report_word: DRG Change Impact
+write_test_result_report_excel: DRG Change Impact
+save_reports_screenshot_as_html: DRG Change Impact
+report_names:&gt;&gt;&gt;&gt;&gt;DRG Clinical Profile
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: DRG Clinical Profile
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s uninitialized
+wait_document_completed---wait: 4s uninitialized
+wait_document_completed---wait: 5s interactive
+wait_document_completed---wait: 6s complete
+save_html_resource: DRG Clinical Profile
+wait_report_title_contains=DRG Clinical Profile=Pass
+close browser
+</p></div><div class="Pass"><p>DRG Change Impact</p><img alt="DRG Change Impact" class="Pass screenshot" id="DRG Change Impact" src="../../auto_results/screenshots/DRG Change Impact.png"/><p style="display:none">write_test_result_report_word: DRG Change Condition Detail
+write_test_result_report_excel: DRG Change Condition Detail
+save_reports_screenshot_as_html: DRG Change Condition Detail
+report_names:&gt;&gt;&gt;&gt;&gt;DRG Change Impact
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: DRG Change Impact
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s interactive
+wait_document_completed---wait: 4s complete
+save_html_resource: DRG Change Impact
+wait_report_title_contains=DRG Change Impact=Pass
+close browser
+</p></div><div class="Pass"><p>DRG Change Condition Detail</p><img alt="DRG Change Condition Detail" class="Pass screenshot" id="DRG Change Condition Detail" src="../../auto_results/screenshots/DRG Change Condition Detail.png"/><p style="display:none">write_test_result_report_word: Discharges by Grouper Version - DRG
+write_test_result_report_excel: Discharges by Grouper Version - DRG
+save_reports_screenshot_as_html: Discharges by Grouper Version - DRG
+report_names:&gt;&gt;&gt;&gt;&gt;DRG Change Condition Detail
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: DRG Change Condition Detail
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s interactive
+wait_document_completed---wait: 4s complete
+save_html_resource: DRG Change Condition Detail
+wait_report_title_contains=DRG Change Detail=Pass
+close browser
+</p></div><div class="Pass"><p>Discharges by Grouper Version - DRG</p><img alt="Discharges by Grouper Version - DRG" class="Pass screenshot" id="Discharges by Grouper Version - DRG" src="../../auto_results/screenshots/Discharges by Grouper Version - DRG.png"/><p style="display:none">write_test_result_report_word: Attending Physician Frequency by DRG
+write_test_result_report_excel: Attending Physician Frequency by DRG
+save_reports_screenshot_as_html: Attending Physician Frequency by DRG
+report_names:&gt;&gt;&gt;&gt;&gt;Discharges by Grouper Version - DRG
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: Discharges by Grouper Version - DRG
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s uninitialized
+wait_document_completed---wait: 4s interactive
+wait_document_completed---wait: 5s interactive
+wait_document_completed---wait: 6s complete
+save_html_resource: Discharges by Grouper Version - DRG
+wait_report_title_contains=Discharges by Grouper Version - DRG=Pass
+close browser
+</p></div><div class="Pass"><p>Attending Physician Frequency by DRG</p><img alt="Attending Physician Frequency by DRG" class="Pass screenshot" id="Attending Physician Frequency by DRG" src="../../auto_results/screenshots/Attending Physician Frequency by DRG.png"/><p style="display:none">write_test_result_report_word: Medicare Case-Mix by Month
+write_test_result_report_excel: Medicare Case-Mix by Month
+save_reports_screenshot_as_html: Medicare Case-Mix by Month
+report_names:&gt;&gt;&gt;&gt;&gt;Attending Physician Frequency by DRG
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: Attending Physician Frequency by DRG
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s loading
+wait_document_completed---wait: 3s interactive
+wait_document_completed---wait: 4s complete
+save_html_resource: Attending Physician Frequency by DRG
+wait_report_title_contains=Frequency=Pass
+close browser
+</p></div><div class="Pass"><p>Medicare Case-Mix by Month</p><img alt="Medicare Case-Mix by Month" class="Pass screenshot" id="Medicare Case-Mix by Month" src="../../auto_results/screenshots/Medicare Case-Mix by Month.png"/><p style="display:none">write_test_result_report_word: Case-Mix by Payer by Month
+write_test_result_report_excel: Case-Mix by Payer by Month
+save_reports_screenshot_as_html: Case-Mix by Payer by Month
+report_names:&gt;&gt;&gt;&gt;&gt;Medicare Case-Mix by Month
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: Medicare Case-Mix by Month
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s uninitialized
+wait_document_completed---wait: 4s uninitialized
+wait_document_completed---wait: 5s uninitialized
+wait_document_completed---wait: 6s uninitialized
+wait_document_completed---wait: 7s uninitialized
+wait_document_completed---wait: 8s uninitialized
+wait_document_completed---wait: 9s uninitialized
+wait_document_completed---wait: 10s uninitialized
+wait_document_completed---wait: 11s uninitialized
+wait_document_completed---wait: 12s uninitialized
+wait_document_completed---wait: 13s uninitialized
+wait_document_completed---wait: 14s interactive
+wait_document_completed---wait: 15s complete
+save_html_resource: Medicare Case-Mix by Month
+wait_report_title_contains=Medicare Case-Mix by Month=Pass
+close browser
+</p></div><div class="Pass"><p>Case-Mix by Payer by Month</p><img alt="Case-Mix by Payer by Month" class="Pass screenshot" id="Case-Mix by Payer by Month" src="../../auto_results/screenshots/Case-Mix by Payer by Month.png"/><p style="display:none">write_test_result_report_word: Case Mix Index (CMI) Comparison
+write_test_result_report_excel: Case Mix Index (CMI) Comparison
+save_reports_screenshot_as_html: Case Mix Index (CMI) Comparison
+report_names:&gt;&gt;&gt;&gt;&gt;Case-Mix by Payer by Month
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: Case-Mix by Payer by Month
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s uninitialized
+wait_document_completed---wait: 4s uninitialized
+wait_document_completed---wait: 5s uninitialized
+wait_document_completed---wait: 6s uninitialized
+wait_document_completed---wait: 7s uninitialized
+wait_document_completed---wait: 8s uninitialized
+wait_document_completed---wait: 9s uninitialized
+wait_document_completed---wait: 10s uninitialized
+wait_document_completed---wait: 11s uninitialized
+wait_document_completed---wait: 12s uninitialized
+wait_document_completed---wait: 13s uninitialized
+wait_document_completed---wait: 14s loading
+wait_document_completed---wait: 15s interactive
+wait_document_completed---wait: 16s complete
+save_html_resource: Case-Mix by Payer by Month
+wait_report_title_contains=Case-Mix by Payer by Month=Pass
+close browser
+</p></div><div class="Pass"><p>Case Mix Index (CMI) Comparison</p><img alt="Case Mix Index (CMI) Comparison" class="Pass screenshot" id="Case Mix Index (CMI) Comparison" src="../../auto_results/screenshots/Case Mix Index (CMI) Comparison.png"/><p style="display:none">write_test_result_report_word: Case Mix Index (CMI) Analysis
+write_test_result_report_excel: Case Mix Index (CMI) Analysis
+save_reports_screenshot_as_html: Case Mix Index (CMI) Analysis
+report_names:&gt;&gt;&gt;&gt;&gt;Case Mix Index (CMI) Comparison
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
 Find Element by:id, value:txtSearch
 wait_element_clickable-by: id, by_target: txtSearch
 Find Element by:id, value:spnSearch
@@ -140,22 +699,28 @@ wait_document_completed---wait: 8s uninitialized
 wait_document_completed---wait: 9s uninitialized
 wait_document_completed---wait: 10s uninitialized
 wait_document_completed---wait: 11s uninitialized
-wait_document_completed---wait: 12s interactive
-wait_document_completed---wait: 13s interactive
+wait_document_completed---wait: 12s uninitialized
+wait_document_completed---wait: 13s uninitialized
 wait_document_completed---wait: 14s interactive
-wait_document_completed---wait: 15s complete
+wait_document_completed---wait: 15s interactive
+wait_document_completed---wait: 16s complete
+save_html_resource: Case Mix Index (CMI) Comparison
 wait_report_title_contains=Case Mix Index (CMI) Comparison=Pass
 close browser
-</p></div><div class="Pass"><p>Case Mix Index (CMI) Analysis</p><img alt="Case Mix Index (CMI) Analysis" class="Fail screenshot" id="Case Mix Index (CMI) Analysis" src="../../auto_results/screenshots/Case Mix Index (CMI) Analysis.png"/><p style="display:none">report_separator-Case Mix Index (CMI) Analysis#
+</p></div><div class="Pass"><p>Case Mix Index (CMI) Analysis</p><img alt="Case Mix Index (CMI) Analysis" class="Pass screenshot" id="Case Mix Index (CMI) Analysis" src="../../auto_results/screenshots/Case Mix Index (CMI) Analysis.png"/><p style="display:none">write_test_result_report_word: Coder Information
+write_test_result_report_excel: Coder Information
+save_reports_screenshot_as_html: Coder Information
+report_names:&gt;&gt;&gt;&gt;&gt;Case Mix Index (CMI) Analysis
 Find Element by:id, value:txtLoginid
 Find Element by:id, value:txtPassword
 Find Element by:id, value:btnloginText
 wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
 wait_element_invisibility by: class name, by_target: modalOverlay
-wait_document_completed---wait: 1s complete
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s complete
 Find Element by:id, value:aSlideMenuSelModuleSIP101
 Find Element by:id, value:aIPModuleWorkplans
-wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Enterprise Reports"]
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
 Find Element by:id, value:txtSearch
 wait_element_clickable-by: id, by_target: txtSearch
 Find Element by:id, value:spnSearch
@@ -178,17 +743,36 @@ wait_document_completed---wait: 10s uninitialized
 wait_document_completed---wait: 11s uninitialized
 wait_document_completed---wait: 12s uninitialized
 wait_document_completed---wait: 13s uninitialized
-wait_document_completed---wait: 14s loading
-wait_document_completed---wait: 15s interactive
-wait_document_completed---wait: 16s interactive
-wait_document_completed---wait: 17s interactive
-wait_document_completed---wait: 18s interactive
-wait_document_completed---wait: 19s interactive
-wait_document_completed---wait: 20s interactive
-wait_document_completed---wait: 21s complete
+wait_document_completed---wait: 14s uninitialized
+wait_document_completed---wait: 15s uninitialized
+wait_document_completed---wait: 16s uninitialized
+wait_document_completed---wait: 17s uninitialized
+wait_document_completed---wait: 18s uninitialized
+wait_document_completed---wait: 19s uninitialized
+wait_document_completed---wait: 20s uninitialized
+wait_document_completed---wait: 21s uninitialized
+wait_document_completed---wait: 22s loading
+wait_document_completed---wait: 23s interactive
+wait_document_completed---wait: 24s interactive
+wait_document_completed---wait: 25s interactive
+wait_document_completed---wait: 26s interactive
+wait_document_completed---wait: 27s interactive
+wait_document_completed---wait: 28s interactive
+wait_document_completed---wait: 29s interactive
+wait_document_completed---wait: 30s interactive
+wait_document_completed---wait: 31s interactive
+wait_document_completed---wait: 32s interactive
+wait_document_completed---wait: 33s interactive
+wait_document_completed---wait: 34s interactive
+wait_document_completed---wait: 35s interactive
+wait_document_completed---wait: 36s interactive
+wait_document_completed---wait: 37s interactive
+wait_document_completed---wait: 38s complete
+save_html_resource: Case Mix Index (CMI) Analysis
 wait_report_title_contains=Case Mix Index (CMI) Analysis=Pass
 close browser
-</p></div><div class="Pass"><p>Coder Information</p><img alt="Coder Information" class="Pass screenshot" id="Coder Information" src="../../auto_results/screenshots/Coder Information.png"/><p style="display:none">report_separator-Coder Information
+</p></div><div class="Pass"><p>Coder Information</p><img alt="Coder Information" class="Pass screenshot" id="Coder Information" src="../../auto_results/screenshots/Coder Information.png"/><p style="display:none">get_reports_by: IP
+report_names:&gt;&gt;&gt;&gt;&gt;Coder Information
 Find Element by:id, value:txtLoginid
 Find Element by:id, value:txtPassword
 Find Element by:id, value:btnloginText
@@ -210,9 +794,12 @@ Find Element by:id, value:btnViewReport
 wait_number_of_windows_to_be=2True=pass
 wait_document_completed---wait: 1s uninitialized
 wait_document_completed---wait: 2s uninitialized
-wait_document_completed---wait: 3s loading
-wait_document_completed---wait: 4s interactive
-wait_document_completed---wait: 5s complete
+wait_document_completed---wait: 3s uninitialized
+wait_document_completed---wait: 4s uninitialized
+wait_document_completed---wait: 5s uninitialized
+wait_document_completed---wait: 6s interactive
+wait_document_completed---wait: 7s complete
+save_html_resource: Coder Information
 wait_report_title_contains=Coder Information=Pass
 close browser
 </p></div></div>

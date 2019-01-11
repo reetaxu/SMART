@@ -1,4 +1,7 @@
-report_separator-Medicare Post-Acute Care (PAC) DRG Frequency
+write_test_result_report_word: DRG Summary by Grouper Version - MDC
+write_test_result_report_excel: DRG Summary by Grouper Version - MDC
+save_reports_screenshot_as_html: DRG Summary by Grouper Version - MDC
+report_names:>>>>>Medicare Post-Acute Care (PAC) DRG Frequency
 Find Element by:id, value:txtLoginid
 Find Element by:id, value:txtPassword
 Find Element by:id, value:btnloginText
@@ -21,10 +24,9 @@ wait_number_of_windows_to_be=2True=pass
 wait_document_completed---wait: 1s uninitialized
 wait_document_completed---wait: 2s uninitialized
 wait_document_completed---wait: 3s uninitialized
-wait_document_completed---wait: 4s loading
-wait_document_completed---wait: 5s loading
-wait_document_completed---wait: 6s interactive
-wait_document_completed---wait: 7s interactive
-wait_document_completed---wait: 8s complete
+wait_document_completed---wait: 4s uninitialized
+wait_document_completed---wait: 5s interactive
+wait_document_completed---wait: 6s complete
+save_html_resource: Medicare Post-Acute Care (PAC) DRG Frequency
 wait_report_title_contains=Frequency=Pass
 close browser

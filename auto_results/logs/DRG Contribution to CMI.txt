@@ -1,4 +1,7 @@
-report_separator-DRG Contribution to CMI
+write_test_result_report_word: DRG Clinical Profile
+write_test_result_report_excel: DRG Clinical Profile
+save_reports_screenshot_as_html: DRG Clinical Profile
+report_names:>>>>>DRG Contribution to CMI
 Find Element by:id, value:txtLoginid
 Find Element by:id, value:txtPassword
 Find Element by:id, value:btnloginText
@@ -19,10 +22,8 @@ Find Element by:id, value:btnViewReport
 wait_number_of_windows_to_be=2True=pass
 wait_document_completed---wait: 1s uninitialized
 wait_document_completed---wait: 2s uninitialized
-wait_document_completed---wait: 3s loading
-wait_document_completed---wait: 4s interactive
-wait_document_completed---wait: 5s interactive
-wait_document_completed---wait: 6s interactive
-wait_document_completed---wait: 7s complete
+wait_document_completed---wait: 3s interactive
+wait_document_completed---wait: 4s complete
+save_html_resource: DRG Contribution to CMI
 wait_report_title_contains=DRG Contribution to CMI=Pass
 close browser

@@ -5,15 +5,14 @@ from tools import common_tools
 
 class MyTestCase(unittest.TestCase):
 
-    def test_get_report_module(self):
+    def Utest_get_report_module(self):
         m = common_tools.get_report_module('Case Listing')
         print(m)
 
-    def Itest_get_log(self):
+    def test_get_log(self):
         logs = common_tools.get_log('Case Listing')
-        print(logs.__len__())
-        for i in logs:
-            print(i)
+        print(logs)
+
 
     def Itest_get_logs(self):
 

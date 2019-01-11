@@ -1,4 +1,7 @@
-report_separator-DRG Change Condition Detail
+write_test_result_report_word: Discharges by Grouper Version - DRG
+write_test_result_report_excel: Discharges by Grouper Version - DRG
+save_reports_screenshot_as_html: Discharges by Grouper Version - DRG
+report_names:>>>>>DRG Change Condition Detail
 Find Element by:id, value:txtLoginid
 Find Element by:id, value:txtPassword
 Find Element by:id, value:btnloginText
@@ -18,9 +21,9 @@ wait_element_clickable-by: id, by_target: btnViewReport
 Find Element by:id, value:btnViewReport
 wait_number_of_windows_to_be=2True=pass
 wait_document_completed---wait: 1s uninitialized
-wait_document_completed---wait: 2s loading
+wait_document_completed---wait: 2s uninitialized
 wait_document_completed---wait: 3s interactive
-wait_document_completed---wait: 4s interactive
-wait_document_completed---wait: 5s complete
+wait_document_completed---wait: 4s complete
+save_html_resource: DRG Change Condition Detail
 wait_report_title_contains=DRG Change Detail=Pass
 close browser

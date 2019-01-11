@@ -57,7 +57,6 @@ class MyTestCase(unittest.TestCase):
         }
 
     def tearDown(self):
-        print('tearDowntearDowntearDowntearDowntearDowntearDown')
         # take screenshot
         screenshot_path = '../../auto_results/screenshots/'
         self.driver.get_screenshot_as_file(screenshot_path + self.report_name + '.png')
@@ -72,12 +71,11 @@ class MyTestCase(unittest.TestCase):
         self.result_report.report_name_saved_search = self.saved_searches.get(self.report_name)
         self.result_report.screen_shot = self.report_name + ".png"
         self.result_report.steps = common_tools.get_log(self.report_name)
-        try:
-            common_tools.write_test_result_report_word(self.result_report)
-            common_tools.write_test_result_report_excel(self.result_report)
-            common_tools.save_reports_screenshot_as_html(self.result_report)
-        except Exception as e:
-            print(e)
+
+        common_tools.write_test_result_report_word(self.result_report)
+        common_tools.write_test_result_report_excel(self.result_report)
+        common_tools.save_reports_screenshot_as_html(self.result_report)
+
 
     # Enterprise Data Validation, Data Validation
     # @parameterized.expand(prepare_reports_names)
@@ -92,7 +90,7 @@ class MyTestCase(unittest.TestCase):
     @parameterized.expand(prepare_reports_names)
     def test_legacy_reports(self, report_name):
         try:
-            common_tools.save_log(str_= 'report_separator-'+ report_name)
+            common_tools.save_log(str_= 'report_names:>>>>>'+ report_name)
             if 'Evaluation & Management Clinical Profile' in report_name:
                 report_name = 'Management Clinical Profile'
 
@@ -134,35 +132,35 @@ class MyTestCase(unittest.TestCase):
                 pass
 
             # assert wait_until_title_contains
-            # self.result_report.report_test_result =reports.Reports.wait_until_title_contains(self, report_name=report_name)
-            if report_name == 'DRG Change Condition Detail':
-                smart_pass = actions.wait_report_title_contains(self.driver, 'DRG Change Detail')
-                self.assertIn('DRG Change Detail', container=self.driver.title,
-                              msg=report_name + settings.error_report_generate)
-                assert 'DRG Change Detail' in self.driver.title
-            elif report_name == 'Top 50 Diagnoses by Present on Admission(POA)':
-                smart_pass = actions.wait_report_title_contains(self.driver,
-                                                                'Top 50 Other Diagnoses by Present on Admission(POA)')
-                assert 'Top 50 Other Diagnoses' in self.driver.title
-            elif report_name == 'Management Clinical Profile':
-                smart_pass = actions.wait_report_title_contains(self.driver, 'Evaluation')
-                assert 'Evaluation' in self.driver.title
-            elif 'Frequency' in report_name:
-                smart_pass = actions.wait_report_title_contains(self.driver, 'Frequency')
-                assert 'Frequency' in self.driver.title
-            elif 'DRG Contribution to Payer CMI' in report_name:
-                smart_pass = actions.wait_report_title_contains(self.driver, 'DRG Contribution to CMI by Payer')
-                assert 'DRG Contribution to CMI by Payer' in self.driver.title
-            elif report_name in report_name:
-                smart_pass = actions.wait_report_title_contains(self.driver, report_name)
-                assert report_name in self.driver.title
-            else:
-                smart_pass = False
+            self.result_report.report_test_result = reports.Reports.wait_until_title_contains(self, report_name=report_name)
+            # if report_name == 'DRG Change Condition Detail':
+            #     smart_pass = actions.wait_report_title_contains(self.driver, 'DRG Change Detail')
+            #     self.assertIn('DRG Change Detail', container=self.driver.title,
+            #                   msg=report_name + settings.error_report_generate)
+            #     assert 'DRG Change Detail' in self.driver.title
+            # elif report_name == 'Top 50 Diagnoses by Present on Admission(POA)':
+            #     smart_pass = actions.wait_report_title_contains(self.driver,
+            #                                                     'Top 50 Other Diagnoses by Present on Admission(POA)')
+            #     assert 'Top 50 Other Diagnoses' in self.driver.title
+            # elif report_name == 'Management Clinical Profile':
+            #     smart_pass = actions.wait_report_title_contains(self.driver, 'Evaluation')
+            #     assert 'Evaluation' in self.driver.title
+            # elif 'Frequency' in report_name:
+            #     smart_pass = actions.wait_report_title_contains(self.driver, 'Frequency')
+            #     assert 'Frequency' in self.driver.title
+            # elif 'DRG Contribution to Payer CMI' in report_name:
+            #     smart_pass = actions.wait_report_title_contains(self.driver, 'DRG Contribution to CMI by Payer')
+            #     assert 'DRG Contribution to CMI by Payer' in self.driver.title
+            # elif report_name in report_name:
+            #     smart_pass = actions.wait_report_title_contains(self.driver, report_name)
+            #     assert report_name in self.driver.title
+            # else:
+            #     smart_pass = False
 
-            if not smart_pass:
-                self.result_report.report_test_result = 'Fail'
-            else:
-                self.result_report.report_test_result = 'Pass'
+            # if not smart_pass:
+            #     self.result_report.report_test_result = 'Fail'
+            # else:
+            #     self.result_report.report_test_result = 'Pass'
 
         except Exception as e:
             print('EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE')

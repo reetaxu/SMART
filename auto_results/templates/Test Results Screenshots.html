@@ -47,10 +47,10 @@
         }
 
         .popup_container {
-            position: absolute;
+            position: fixed;
             z-index: 9999;
-            width: 60%;
-            height: 100%;
+            width: 50%;
+            height: 80%;
             margin: 50px 300px;
         }
 
@@ -64,6 +64,14 @@
 <script src="../../resources/js/jquery-3.3.1.js" type="text/javascript"></script>
 <script type="text/javascript">
         $(document).ready(function () {
+
+                var img_len = $("img").length
+                var fail_len = $("img.Fail").length
+                var pass_len = $("img.Pass").length
+                $(".pass_total").text(pass_len)
+                $(".fail_total").text(fail_len)
+                $(".all_total").text(img_len)
+
             $("button#passbtn").click(function () {
                 $("div.Fail").hide()
                 $("div.Pass").show()
@@ -95,13 +103,11 @@
 </div>
 <div id="main_container">
 <div id="actions">
-<button id="passbtn">Pass</button>
-<button id="failbtn">Fail</button>
-<button id="Allbtn">All</button>
-<button id="SelectAllbtn">Select All</button>
+<button id="passbtn">Pass</button><i class="pass_total"></i>
+<button id="failbtn">Fail</button><i class="fail_total"></i>
+<button id="Allbtn">All</button><i class="all_total"></i>
 </div>
 <div id="container"></div>
-</div>
 </div>
 </body>
 </html>

@@ -1,4 +1,7 @@
-report_separator-Flag Management Setting Audit
+write_test_result_report_word: DRG Contribution to CMI
+write_test_result_report_excel: DRG Contribution to CMI
+save_reports_screenshot_as_html: DRG Contribution to CMI
+report_names:>>>>>Flag Management Setting Audit
 Find Element by:id, value:txtLoginid
 Find Element by:id, value:txtPassword
 Find Element by:id, value:btnloginText
@@ -19,8 +22,8 @@ wait_element_clickable-by: id, by_target: btnViewReport
 Find Element by:id, value:btnViewReport
 wait_number_of_windows_to_be=2True=pass
 wait_document_completed---wait: 1s uninitialized
-wait_document_completed---wait: 2s loading
-wait_document_completed---wait: 3s loading
+wait_document_completed---wait: 2s interactive
+wait_document_completed---wait: 3s interactive
 wait_document_completed---wait: 4s interactive
 wait_document_completed---wait: 5s interactive
 wait_document_completed---wait: 6s interactive
@@ -138,5 +141,6 @@ wait_document_completed---wait: 117s interactive
 wait_document_completed---wait: 118s interactive
 wait_document_completed---wait: 119s interactive
 wait_document_completed, page takes too long to response: Flag Management Setting Audit Report
+save_html_resource: Flag Management Setting Audit
 wait_report_title_contains=Flag Management Setting Audit=Pass
 close browser

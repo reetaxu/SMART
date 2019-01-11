@@ -1,13 +1,17 @@
-report_separator-Summary by Primary Flag#
+write_test_result_report_word: Medicare Post-Acute Care (PAC) DRG Frequency
+write_test_result_report_excel: Medicare Post-Acute Care (PAC) DRG Frequency
+save_reports_screenshot_as_html: Medicare Post-Acute Care (PAC) DRG Frequency
+report_names:>>>>>Summary by Primary Flag
 Find Element by:id, value:txtLoginid
 Find Element by:id, value:txtPassword
 Find Element by:id, value:btnloginText
 wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
 wait_element_invisibility by: class name, by_target: modalOverlay
-wait_document_completed---wait: 1s complete
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s complete
 Find Element by:id, value:aSlideMenuSelModuleSIP101
 Find Element by:id, value:aIPModuleWorkplans
-wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Enterprise Reports"]
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
 Find Element by:id, value:txtSearch
 wait_element_clickable-by: id, by_target: txtSearch
 Find Element by:id, value:spnSearch
@@ -23,5 +27,6 @@ wait_document_completed---wait: 3s uninitialized
 wait_document_completed---wait: 4s uninitialized
 wait_document_completed---wait: 5s interactive
 wait_document_completed---wait: 6s complete
+save_html_resource: Summary by Primary Flag
 wait_report_title_contains=Summary by Primary Flag=Pass
 close browser

@@ -19,18 +19,27 @@ def get_report_module(report_name):
 
 
 def get_log(report_name):
-    str_ = 'get_log: ' + report_name
-    save_log(str_)
 
     if 'CC/MCC' in report_name:
         report_name = 'Top 50 CC_MCC Diagnoses'
 
-    log_path = '../../auto_results/logs/' + report_name + '.txt'
+    log_path = '../../auto_results/logs/log.txt'
+    log_path_target = '../../auto_results/logs/'
     f = open(log_path, 'r')
+    f_report = open(log_path_target + report_name + '.txt', 'w')
     lines = f.readlines()
     steps_ = ''
+    steps_report = []
     for i in lines:
         steps_ = steps_ + i
+        steps_report.append(i)
+
+    f_report.writelines(steps_report)
+    f_report.close()
+    f.close()
+
+    f = open(log_path, 'w')
+    f.write('')
     f.close()
     return steps_
 
@@ -46,8 +55,8 @@ def get_logs():
     j = 0
     for i in lines:
         steps.append(i)
-        if 'report_separator' in i:
-            report_name = i.strip()[17:].rstrip('#')
+        if 'report_names:>>>>>' in i:
+            report_name = i.strip()[18:].rstrip('#')
             if 'CC/MCC' in report_name:
                 report_name = 'Top 50 CC_MCC Diagnoses'
             j += 1
@@ -63,7 +72,6 @@ def get_logs():
 
 
 def save_log(str_):
-
     print(str_)
     log_path = '../../auto_results/logs/log.txt'
     f = open(log_path, 'a')
@@ -72,7 +80,7 @@ def save_log(str_):
 
 
 def save_reports_screenshot_as_html(result_report):
-    str_='save_reports_screenshot_as_html: ' + result_report.report_name
+    str_ = 'save_reports_screenshot_as_html: ' + result_report.report_name
     save_log(str_)
 
     file_path_target = '../../auto_results/test_results/Test Results Screenshots.html'
@@ -133,8 +141,7 @@ def clear_previous_auto_result():
 
 
 def get_reports_by(IP_or_OP):
-    str_ = 'get_reports_by: ' + IP_or_OP
-    save_log(str_)
+
     f = '../../resources/Legacy & Enhanced Report.xlsx'
     book = xlrd.open_workbook(f)  # 打开一个excel
     sheet_ip = book.sheet_by_name(IP_or_OP)
@@ -169,7 +176,7 @@ def write_test_result_report_word(result_report):
         document = Document()
     document.add_heading(result_report.report_name + ':' + result_report.report_test_result, level=1)
     document.add_paragraph(text='Test Result: ' + result_report.msg)
-    document.add_picture(image_path, width=Inches(6.43))
+    document.add_picture(image_path, width=Inches(5))
     document.save('../../auto_results/test_results/' + settings.test_result_file_name)
 
 

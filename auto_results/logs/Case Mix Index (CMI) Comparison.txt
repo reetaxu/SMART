@@ -1,4 +1,7 @@
-report_separator-Case Mix Index (CMI) Comparison#
+write_test_result_report_word: Case Mix Index (CMI) Analysis
+write_test_result_report_excel: Case Mix Index (CMI) Analysis
+save_reports_screenshot_as_html: Case Mix Index (CMI) Analysis
+report_names:>>>>>Case Mix Index (CMI) Comparison
 Find Element by:id, value:txtLoginid
 Find Element by:id, value:txtPassword
 Find Element by:id, value:btnloginText
@@ -7,7 +10,7 @@ wait_element_invisibility by: class name, by_target: modalOverlay
 wait_document_completed---wait: 1s complete
 Find Element by:id, value:aSlideMenuSelModuleSIP101
 Find Element by:id, value:aIPModuleWorkplans
-wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Enterprise Reports"]
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
 Find Element by:id, value:txtSearch
 wait_element_clickable-by: id, by_target: txtSearch
 Find Element by:id, value:spnSearch
@@ -28,9 +31,11 @@ wait_document_completed---wait: 8s uninitialized
 wait_document_completed---wait: 9s uninitialized
 wait_document_completed---wait: 10s uninitialized
 wait_document_completed---wait: 11s uninitialized
-wait_document_completed---wait: 12s interactive
-wait_document_completed---wait: 13s interactive
+wait_document_completed---wait: 12s uninitialized
+wait_document_completed---wait: 13s uninitialized
 wait_document_completed---wait: 14s interactive
-wait_document_completed---wait: 15s complete
+wait_document_completed---wait: 15s interactive
+wait_document_completed---wait: 16s complete
+save_html_resource: Case Mix Index (CMI) Comparison
 wait_report_title_contains=Case Mix Index (CMI) Comparison=Pass
 close browser
