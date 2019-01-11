@@ -1,0 +1,5 @@
+report_separator-Data Validation
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//strzw058080/SMARTSolutions/&c=UTF-8&f=regular&captive=true&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20strzw058080.
+None
+close browser

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Test Results Screenshots</title>
+    <style type="text/css">
+        body{
+
+        }
+        img{
+            width: 450px;
+            height: 400px;
+        }
+        div#container div{
+            width: 450px;
+            height: 650px;
+
+            float:left;
+            word-wrap:break-word;
+            word-break:break-all;
+            <!--overflow: hidden;-->
+        }
+        div#main_container{
+            margin: 0 auto;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        div#actions{
+            margin-bottom: 20px;
+        }
+        div.Pass{
+            border-color: #006400;
+            border-width: 2px;
+            border-style: solid;
+        }
+        div.Fail{
+            border-color: #FF0000;
+            border-width: 2px;
+            border-style: solid;
+        }
+
+    </style>
+
+    <script type="text/javascript" src="../../resources/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+                $("button#passbtn").click(function(){
+                      $("div.Fail").hide()
+                      $("div.Pass").show()
+                })
+                $("button#failbtn").click(function(){
+                      $("div.Pass").hide()
+                      $("div.Fail").show()
+                })
+                $("button#Allbtn").click(function(){
+                      $("div.Pass").show()
+                      $("div.Fail").show()
+                })
+                $("button.steps").click(function(){
+                      alert('steps')
+                })
+        })
+    </script>
+</head>
+<body>
+<div id="main_container">
+    <div id="actions">
+        <button id="passbtn">Pass</button>
+        <button id="failbtn">Fail</button>
+        <button id="Allbtn">All</button>
+        <button id="SelectAllbtn">Select All</button>
+    </div>
+    <div id="container">
+
+    </div>
+</div>
+</body>
+</html>

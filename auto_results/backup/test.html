@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.js" type="text/javascript">
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+        $("#failbtn").click(function(){
+            alert('tes')
+            $("p").hide()
+        });
+
+        function test(){
+            alert('tes')
+        }
+
+
+    });
+
+    </script>
+</head>
+<body>
+<div id="actions">
+        <button id="passbtn" onclick="test()">Pass</button>
+        <button id="failbtn">Fail</button>
+        <button id="SelectAllbtn">Select All</button>
+    </div>
+</body>
+</html>

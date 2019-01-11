@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Test Results Screenshots</title>
+    <style type="text/css">
+        body{
+
+        }
+        img{
+            width: 450px;
+            height: 400px;
+        }
+        div#container div{
+            width: 450px;
+            height: 650px;
+
+            float:left;
+            word-wrap:break-word;
+            word-break:break-all;
+            <!--overflow: hidden;-->
+        }
+        div#main_container{
+            margin: 0 auto;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        div#actions{
+            margin-bottom: 20px;
+        }
+        div.Pass{
+            border-color: #006400;
+            border-width: 2px;
+            border-style: solid;
+        }
+        div.Fail{
+            border-color: #FF0000;
+            border-width: 2px;
+            border-style: solid;
+        }
+
+    </style>
+
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+                $("button#passbtn").click(function(){
+                      $("div.Fail").hide()
+                      $("div.Pass").show()
+                })
+                $("button#failbtn").click(function(){
+                      $("div.Pass").hide()
+                      $("div.Fail").show()
+                })
+                $("button#Allbtn").click(function(){
+                      $("div.Pass").show()
+                      $("div.Fail").show()
+                })
+        })
+    </script>
+</head>
+<body>
+<div id="main_container">
+    <div id="actions">
+        <button id="passbtn">Pass</button>
+        <button id="failbtn">Fail</button>
+        <button id="Allbtn">All</button>
+        <button id="SelectAllbtn">Select All</button>
+    </div>
+    <div id="container">
+        <div class="Pass"><p>Detailed Case Listing</p><img alt="Detailed Case Listing" class="Pass"
+                                                           id="Detailed Case Listing"
+                                                           src="../../auto_results/screenshots/Detailed Case Listing.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Case Version Comparison</p><img alt="Case Version Comparison" class="Pass"
+                                                             id="Case Version Comparison"
+                                                             src="../../auto_results/screenshots/Case Version Comparison.png"/>
+            <p>Success</p></div>
+        <div class="Fail">
+            <p>Inpatient Flag Information by Facility</p>
+            <img alt="Inpatient Flag Information by Facility"
+                 class="Fail"
+                 id="Inpatient Flag Information by Facility"
+                 src="../../auto_results/screenshots/Inpatient Flag Information by Facility.png"/>
+            <p>Message: Unable to locate element: //div[text()="JonTestPlsDoNotChangeIt_FlagInfor"]
+            </p>
+        </div>
+        <div class="Fail"><p>Inpatient Flag Information</p><img alt="Inpatient Flag Information" class="Fail"
+                                                                id="Inpatient Flag Information"
+                                                                src="../../auto_results/screenshots/Inpatient Flag Information.png"/>
+            <p>Message: Unable to locate element: //div[text()="JonTestPlsDoNotChangeIt_FlagInfor"]
+            </p></div>
+        <div class="Fail"><p>Security Administration Information by Role</p><img
+                alt="Security Administration Information by Role" class="Fail"
+                id="Security Administration Information by Role"
+                src="../../auto_results/screenshots/Security Administration Information by Role.png"/>
+            <p>Message: Unable to locate element: //div[text()="JonTestPlsDoNotChangeIt_SAIBR"]
+            </p></div>
+        <div class="Pass"><p>SMART Reimbursement Activity</p><img alt="SMART Reimbursement Activity" class="Pass"
+                                                                  id="SMART Reimbursement Activity"
+                                                                  src="../../auto_results/screenshots/SMART Reimbursement Activity.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Reimbursement Change Summary</p><img alt="Reimbursement Change Summary" class="Pass"
+                                                                  id="Reimbursement Change Summary"
+                                                                  src="../../auto_results/screenshots/Reimbursement Change Summary.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Medicare HAC Potential Impact</p><img alt="Medicare HAC Potential Impact" class="Pass"
+                                                                   id="Medicare HAC Potential Impact"
+                                                                   src="../../auto_results/screenshots/Medicare HAC Potential Impact.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>CMI Reimbursement Summary</p><img alt="CMI Reimbursement Summary" class="Pass"
+                                                               id="CMI Reimbursement Summary"
+                                                               src="../../auto_results/screenshots/CMI Reimbursement Summary.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Summary by Primary Flag with Revision Information</p><img
+                alt="Summary by Primary Flag with Revision Information" class="Pass"
+                id="Summary by Primary Flag with Revision Information"
+                src="../../auto_results/screenshots/Summary by Primary Flag with Revision Information.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Case Listing</p><img alt="Case Listing" class="Pass" id="Case Listing"
+                                                  src="../../auto_results/screenshots/Case Listing.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Summary by Primary Flag</p><img alt="Summary by Primary Flag" class="Pass"
+                                                             id="Summary by Primary Flag"
+                                                             src="../../auto_results/screenshots/Summary by Primary Flag.png"/>
+            <p>Success</p></div>
+        <div class="Fail"><p>SMART Results Summary with CMI by Facility</p><img
+                alt="SMART Results Summary with CMI by Facility" class="Fail"
+                id="SMART Results Summary with CMI by Facility"
+                src="../../auto_results/screenshots/SMART Results Summary with CMI by Facility.png"/>
+            <p>'Error Occurred' unexpectedly found in '&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;[INFO]: Starting
+                to Process the Report from Page_Load Event\n[INFO]: Completed getting SMARTReport object
+                (oReport)\n[INFO]: Completed getting the report path C:\\Program Files
+                (x86)\\PwC\\SMART\\SMARTWeb\\\\Reports\\ReportWizard\\IP\\Standard\\Enterprise SMART Results Summary
+                with CMI by Facility.rdlc\n[INFO]: Completed gettting Search Criteria (oCriteria)\n[ERROR]: Error
+                Occurred DataPortal.Fetch failed&lt;/body&gt;&lt;/html&gt;' : SMART Results Summary with CMI by
+                Facilityreport is not generated properly</p></div>
+        <div class="Pass"><p>SMART Results Summary</p><img alt="SMART Results Summary" class="Pass"
+                                                           id="SMART Results Summary"
+                                                           src="../../auto_results/screenshots/SMART Results Summary.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>SMART Report Card</p><img alt="SMART Report Card" class="Pass" id="SMART Report Card"
+                                                       src="../../auto_results/screenshots/SMART Report Card.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>SMART Case Review Results</p><img alt="SMART Case Review Results" class="Pass"
+                                                               id="SMART Case Review Results"
+                                                               src="../../auto_results/screenshots/SMART Case Review Results.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Profile</p><img alt="Profile" class="Pass" id="Profile"
+                                             src="../../auto_results/screenshots/Profile.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Flag Rate by Facility by Month</p><img alt="Flag Rate by Facility by Month" class="Pass"
+                                                                    id="Flag Rate by Facility by Month"
+                                                                    src="../../auto_results/screenshots/Flag Rate by Facility by Month.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Coding-DRG Accuracy Analysis</p><img alt="Coding-DRG Accuracy Analysis" class="Pass"
+                                                                  id="Coding-DRG Accuracy Analysis"
+                                                                  src="../../auto_results/screenshots/Coding-DRG Accuracy Analysis.png"/>
+            <p>Success</p></div>
+        <div class="Fail"><p>Enterprise Data Validation</p><img alt="Enterprise Data Validation" class="Fail"
+                                                                id="Enterprise Data Validation"
+                                                                src="../../auto_results/screenshots/Enterprise Data Validation.png"/>
+            <p>Message:
+            </p></div>
+        <div class="Pass"><p>Top 50 Diagnoses by Present on Admission(POA)</p><img
+                alt="Top 50 Diagnoses by Present on Admission(POA)" class="Pass"
+                id="Top 50 Diagnoses by Present on Admission(POA)"
+                src="../../auto_results/screenshots/Top 50 Diagnoses by Present on Admission(POA).png"/>
+            <p>Success</p></div>
+        <div class="Fail"><p>PEPPER Report</p><img alt="PEPPER Report" class="Fail" id="PEPPER Report"
+                                                   src="../../auto_results/screenshots/PEPPER Report.png"/>
+            <p>Message:
+            </p></div>
+        <div class="Pass"><p>Medicare Hospital-Acquired Conditions</p><img alt="Medicare Hospital-Acquired Conditions"
+                                                                           class="Pass"
+                                                                           id="Medicare Hospital-Acquired Conditions"
+                                                                           src="../../auto_results/screenshots/Medicare Hospital-Acquired Conditions.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Diagnosis Analysis by Present on Admission(POA)</p><img
+                alt="Diagnosis Analysis by Present on Admission(POA)" class="Pass"
+                id="Diagnosis Analysis by Present on Admission(POA)"
+                src="../../auto_results/screenshots/Diagnosis Analysis by Present on Admission(POA).png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Frequency</p><img alt="Frequency" class="Pass" id="Frequency"
+                                               src="../../auto_results/screenshots/Frequency.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Medicare Post-Acute Care (PAC) DRG Frequency by Patient Status</p><img
+                alt="Medicare Post-Acute Care (PAC) DRG Frequency by Patient Status" class="Pass"
+                id="Medicare Post-Acute Care (PAC) DRG Frequency by Patient Status"
+                src="../../auto_results/screenshots/Medicare Post-Acute Care (PAC) DRG Frequency by Patient Status.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>DRG Illness Severity Score Comparison by Payer</p><img
+                alt="DRG Illness Severity Score Comparison by Payer" class="Pass"
+                id="DRG Illness Severity Score Comparison by Payer"
+                src="../../auto_results/screenshots/DRG Illness Severity Score Comparison by Payer.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>DRG Frequency</p><img alt="DRG Frequency" class="Pass" id="DRG Frequency"
+                                                   src="../../auto_results/screenshots/DRG Frequency.png"/>
+            <p>Success</p></div>
+        <div class="Fail"><p>DRG Contribution to Payer CMI</p><img alt="DRG Contribution to Payer CMI" class="Fail"
+                                                                   id="DRG Contribution to Payer CMI"
+                                                                   src="../../auto_results/screenshots/DRG Contribution to Payer CMI.png"/>
+            <p>Message: Unable to locate element: //div[text()="JonTestPlsDoNotChangeItDRG"]
+            </p></div>
+        <div class="Pass"><p>DRG Clinical Profile</p><img alt="DRG Clinical Profile" class="Pass"
+                                                          id="DRG Clinical Profile"
+                                                          src="../../auto_results/screenshots/DRG Clinical Profile.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Case Mix Index (CMI) Comparison</p><img alt="Case Mix Index (CMI) Comparison" class="Pass"
+                                                                     id="Case Mix Index (CMI) Comparison"
+                                                                     src="../../auto_results/screenshots/Case Mix Index (CMI) Comparison.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Data Comparison</p><img alt="Data Comparison" class="Pass" id="Data Comparison"
+                                                     src="../../auto_results/screenshots/Data Comparison.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Case Mix Index (CMI) Analysis</p><img alt="Case Mix Index (CMI) Analysis" class="Pass"
+                                                                   id="Case Mix Index (CMI) Analysis"
+                                                                   src="../../auto_results/screenshots/Case Mix Index (CMI) Analysis.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Data Comparison</p><img alt="Data Comparison" class="Pass" id="Data Comparison"
+                                                     src="../../auto_results/screenshots/Data Comparison.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>SMART Reimbursement Activity</p><img alt="SMART Reimbursement Activity" class="Pass"
+                                                                  id="SMART Reimbursement Activity"
+                                                                  src="../../auto_results/screenshots/SMART Reimbursement Activity.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Reimbursement Change Summary</p><img alt="Reimbursement Change Summary" class="Pass"
+                                                                  id="Reimbursement Change Summary"
+                                                                  src="../../auto_results/screenshots/Reimbursement Change Summary.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Medicare Post-Acute Care (PAC) Reimbursement Comparison</p><img
+                alt="Medicare Post-Acute Care (PAC) Reimbursement Comparison" class="Pass"
+                id="Medicare Post-Acute Care (PAC) Reimbursement Comparison"
+                src="../../auto_results/screenshots/Medicare Post-Acute Care (PAC) Reimbursement Comparison.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Medicare Post-Acute Care (PAC) DRG Reimbursement</p><img
+                alt="Medicare Post-Acute Care (PAC) DRG Reimbursement" class="Pass"
+                id="Medicare Post-Acute Care (PAC) DRG Reimbursement"
+                src="../../auto_results/screenshots/Medicare Post-Acute Care (PAC) DRG Reimbursement.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Medicare HAC Potential Impact</p><img alt="Medicare HAC Potential Impact" class="Pass"
+                                                                   id="Medicare HAC Potential Impact"
+                                                                   src="../../auto_results/screenshots/Medicare HAC Potential Impact.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Grouper Version Reimbursement Detail</p><img alt="Grouper Version Reimbursement Detail"
+                                                                          class="Pass"
+                                                                          id="Grouper Version Reimbursement Detail"
+                                                                          src="../../auto_results/screenshots/Grouper Version Reimbursement Detail.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>CMI Reimbursement Summary by Attending Physician</p><img
+                alt="CMI Reimbursement Summary by Attending Physician" class="Pass"
+                id="CMI Reimbursement Summary by Attending Physician"
+                src="../../auto_results/screenshots/CMI Reimbursement Summary by Attending Physician.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Case Status Reimbursement Summary</p><img alt="Case Status Reimbursement Summary"
+                                                                       class="Pass"
+                                                                       id="Case Status Reimbursement Summary"
+                                                                       src="../../auto_results/screenshots/Case Status Reimbursement Summary.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Patient Status Mapping Information</p><img alt="Patient Status Mapping Information"
+                                                                        class="Pass"
+                                                                        id="Patient Status Mapping Information"
+                                                                        src="../../auto_results/screenshots/Patient Status Mapping Information.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Case Status Reimbursement Detail</p><img alt="Case Status Reimbursement Detail"
+                                                                      class="Pass" id="Case Status Reimbursement Detail"
+                                                                      src="../../auto_results/screenshots/Case Status Reimbursement Detail.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>SMART Results Summary</p><img alt="SMART Results Summary" class="Pass"
+                                                           id="SMART Results Summary"
+                                                           src="../../auto_results/screenshots/SMART Results Summary.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>SMART Report Card</p><img alt="SMART Report Card" class="Pass" id="SMART Report Card"
+                                                       src="../../auto_results/screenshots/SMART Report Card.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>SMART Case Review Results</p><img alt="SMART Case Review Results" class="Pass"
+                                                               id="SMART Case Review Results"
+                                                               src="../../auto_results/screenshots/SMART Case Review Results.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Readmissions</p><img alt="Readmissions" class="Pass" id="Readmissions"
+                                                  src="../../auto_results/screenshots/Readmissions.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Profile</p><img alt="Profile" class="Pass" id="Profile"
+                                             src="../../auto_results/screenshots/Profile.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Performance Metrics</p><img alt="Performance Metrics" class="Pass" id="Performance Metrics"
+                                                         src="../../auto_results/screenshots/Performance Metrics.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Illness Severity Score by Payer by Month</p><img
+                alt="Illness Severity Score by Payer by Month" class="Pass"
+                id="Illness Severity Score by Payer by Month"
+                src="../../auto_results/screenshots/Illness Severity Score by Payer by Month.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Coding-DRG Review Summary</p><img alt="Coding-DRG Review Summary" class="Pass"
+                                                               id="Coding-DRG Review Summary"
+                                                               src="../../auto_results/screenshots/Coding-DRG Review Summary.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Coding-DRG Accuracy Analysis</p><img alt="Coding-DRG Accuracy Analysis" class="Pass"
+                                                                  id="Coding-DRG Accuracy Analysis"
+                                                                  src="../../auto_results/screenshots/Coding-DRG Accuracy Analysis.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Financial Class Mapping Information</p><img alt="Financial Class Mapping Information"
+                                                                         class="Pass"
+                                                                         id="Financial Class Mapping Information"
+                                                                         src="../../auto_results/screenshots/Financial Class Mapping Information.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Case Change Results</p><img alt="Case Change Results" class="Pass" id="Case Change Results"
+                                                         src="../../auto_results/screenshots/Case Change Results.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Average Length of Stay by Payer by Month</p><img
+                alt="Average Length of Stay by Payer by Month" class="Pass"
+                id="Average Length of Stay by Payer by Month"
+                src="../../auto_results/screenshots/Average Length of Stay by Payer by Month.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>IP Worksheet</p><img alt="IP Worksheet" class="Pass" id="IP Worksheet"
+                                                  src="../../auto_results/screenshots/IP Worksheet.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Frequency</p><img alt="Frequency" class="Pass" id="Frequency"
+                                               src="../../auto_results/screenshots/Frequency.png"/>
+            <p>Success</p></div>
+        <div class="Fail"><p>Data Validation</p><img alt="Data Validation" class="Fail" id="Data Validation"
+                                                     src="../../auto_results/screenshots/Data Validation.png"/>
+            <p>Message: Reached error page: about:neterror?e=dnsNotFound&amp;u=http%3A//strzw058080/SMARTSolutions/&amp;c=UTF-8&amp;f=regular&amp;captive=true&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20strzw058080.
+            </p></div>
+        <div class="Pass"><p>Cases Processed on Import</p><img alt="Cases Processed on Import" class="Pass"
+                                                               id="Cases Processed on Import"
+                                                               src="../../auto_results/screenshots/Cases Processed on Import.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Top 50 Diagnoses by Present on Admission(POA)</p><img
+                alt="Top 50 Diagnoses by Present on Admission(POA)" class="Pass"
+                id="Top 50 Diagnoses by Present on Admission(POA)"
+                src="../../auto_results/screenshots/Top 50 Diagnoses by Present on Admission(POA).png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Principal Procedures</p><img alt="Principal Procedures" class="Pass"
+                                                          id="Principal Procedures"
+                                                          src="../../auto_results/screenshots/Principal Procedures.png"/>
+            <p>Success</p></div>
+        <div class="Fail"><p>Present on Admission(POA) Comparison</p><img alt="Present on Admission(POA) Comparison"
+                                                                          class="Fail"
+                                                                          id="Present on Admission(POA) Comparison"
+                                                                          src="../../auto_results/screenshots/Present on Admission(POA) Comparison.png"/>
+            <p>Message: Unable to locate element: //div[text()="JonTestPlsDoNotChangeItPOA"]
+            </p></div>
+        <div class="Fail"><p>DRG Listing by Payer</p><img alt="DRG Listing by Payer" class="Fail"
+                                                          id="DRG Listing by Payer"
+                                                          src="../../auto_results/screenshots/DRG Listing by Payer.png"/>
+            <p>Message: Unable to locate element: //div[text()="Jon_automation_test_pls_do_not_change_it"]
+            </p></div>
+        <div class="Pass"><p>Medicare Hospital-Acquired Conditions</p><img alt="Medicare Hospital-Acquired Conditions"
+                                                                           class="Pass"
+                                                                           id="Medicare Hospital-Acquired Conditions"
+                                                                           src="../../auto_results/screenshots/Medicare Hospital-Acquired Conditions.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Diagnosis Code Usage by Payer</p><img alt="Diagnosis Code Usage by Payer" class="Pass"
+                                                                   id="Diagnosis Code Usage by Payer"
+                                                                   src="../../auto_results/screenshots/Diagnosis Code Usage by Payer.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Diagnosis Analysis by Present on Admission(POA)</p><img
+                alt="Diagnosis Analysis by Present on Admission(POA)" class="Pass"
+                id="Diagnosis Analysis by Present on Admission(POA)"
+                src="../../auto_results/screenshots/Diagnosis Analysis by Present on Admission(POA).png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Frequency</p><img alt="Frequency" class="Pass" id="Frequency"
+                                               src="../../auto_results/screenshots/Frequency.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Summary by Primary Flag with Revision Information</p><img
+                alt="Summary by Primary Flag with Revision Information" class="Pass"
+                id="Summary by Primary Flag with Revision Information"
+                src="../../auto_results/screenshots/Summary by Primary Flag with Revision Information.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Summary by Primary Flag</p><img alt="Summary by Primary Flag" class="Pass"
+                                                             id="Summary by Primary Flag"
+                                                             src="../../auto_results/screenshots/Summary by Primary Flag.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Medicare Post-Acute Care (PAC) DRG Frequency</p><img
+                alt="Medicare Post-Acute Care (PAC) DRG Frequency" class="Pass"
+                id="Medicare Post-Acute Care (PAC) DRG Frequency"
+                src="../../auto_results/screenshots/Medicare Post-Acute Care (PAC) DRG Frequency.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>DRG Summary by Grouper Version - MDC</p><img alt="DRG Summary by Grouper Version - MDC"
+                                                                          class="Pass"
+                                                                          id="DRG Summary by Grouper Version - MDC"
+                                                                          src="../../auto_results/screenshots/DRG Summary by Grouper Version - MDC.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>DRG Illness Severity Score Comparison</p><img alt="DRG Illness Severity Score Comparison"
+                                                                           class="Pass"
+                                                                           id="DRG Illness Severity Score Comparison"
+                                                                           src="../../auto_results/screenshots/DRG Illness Severity Score Comparison.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>DRG Frequency</p><img alt="DRG Frequency" class="Pass" id="DRG Frequency"
+                                                   src="../../auto_results/screenshots/DRG Frequency.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Flag Management Setting Audit</p><img alt="Flag Management Setting Audit" class="Pass"
+                                                                   id="Flag Management Setting Audit"
+                                                                   src="../../auto_results/screenshots/Flag Management Setting Audit.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>DRG Contribution to CMI</p><img alt="DRG Contribution to CMI" class="Pass"
+                                                             id="DRG Contribution to CMI"
+                                                             src="../../auto_results/screenshots/DRG Contribution to CMI.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>DRG Clinical Profile</p><img alt="DRG Clinical Profile" class="Pass"
+                                                          id="DRG Clinical Profile"
+                                                          src="../../auto_results/screenshots/DRG Clinical Profile.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>DRG Change Impact</p><img alt="DRG Change Impact" class="Pass" id="DRG Change Impact"
+                                                       src="../../auto_results/screenshots/DRG Change Impact.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>DRG Change Condition Detail</p><img alt="DRG Change Condition Detail" class="Pass"
+                                                                 id="DRG Change Condition Detail"
+                                                                 src="../../auto_results/screenshots/DRG Change Condition Detail.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Discharges by Grouper Version - DRG</p><img alt="Discharges by Grouper Version - DRG"
+                                                                         class="Pass"
+                                                                         id="Discharges by Grouper Version - DRG"
+                                                                         src="../../auto_results/screenshots/Discharges by Grouper Version - DRG.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Attending Physician Frequency by DRG</p><img alt="Attending Physician Frequency by DRG"
+                                                                          class="Pass"
+                                                                          id="Attending Physician Frequency by DRG"
+                                                                          src="../../auto_results/screenshots/Attending Physician Frequency by DRG.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Medicare Case-Mix by Month</p><img alt="Medicare Case-Mix by Month" class="Pass"
+                                                                id="Medicare Case-Mix by Month"
+                                                                src="../../auto_results/screenshots/Medicare Case-Mix by Month.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Case-Mix by Payer by Month</p><img alt="Case-Mix by Payer by Month" class="Pass"
+                                                                id="Case-Mix by Payer by Month"
+                                                                src="../../auto_results/screenshots/Case-Mix by Payer by Month.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Case Mix Index (CMI) Comparison</p><img alt="Case Mix Index (CMI) Comparison" class="Pass"
+                                                                     id="Case Mix Index (CMI) Comparison"
+                                                                     src="../../auto_results/screenshots/Case Mix Index (CMI) Comparison.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Case Mix Index (CMI) Analysis</p><img alt="Case Mix Index (CMI) Analysis" class="Pass"
+                                                                   id="Case Mix Index (CMI) Analysis"
+                                                                   src="../../auto_results/screenshots/Case Mix Index (CMI) Analysis.png"/>
+            <p>Success</p></div>
+        <div class="Pass"><p>Coder Information</p><img alt="Coder Information" class="Pass" id="Coder Information"
+                                                       src="../../auto_results/screenshots/Coder Information.png"/>
+            <p>Success</p></div>
+    </div>
+</div>
+</body>
+</html>

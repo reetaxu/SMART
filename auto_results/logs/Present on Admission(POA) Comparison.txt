@@ -1,0 +1,22 @@
+report_separator-Present on Admission(POA) Comparison
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: Present on Admission(POA) Comparison
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+Find Element by:id, value:showHideSearchSavedHeader
+Find Element by:xpath, value://div[text()="JonTestPlsDoNotChangeItPOA"]
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+Message: Unable to locate element: //div[text()="JonTestPlsDoNotChangeItPOA"]
+None
+close browser

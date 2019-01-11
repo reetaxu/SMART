@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Test Results Screenshots</title>
+    <style type="text/css">
+        body{
+
+        }
+        img{
+            width: 450px;
+            height: 400px;
+        }
+        div#container div{
+            width: 450px;
+            height: 650px;
+
+            float:left;
+            word-wrap:break-word;
+            word-break:break-all;
+            <!--overflow: hidden;-->
+        }
+        div#main_container{
+            margin: 0 auto;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        div#actions{
+            margin-bottom: 20px;
+        }
+        div.Pass{
+            border-color: #006400;
+            border-width: 2px;
+            border-style: solid;
+        }
+        div.Fail{
+            border-color: #FF0000;
+            border-width: 2px;
+            border-style: solid;
+        }
+        .popup_container{
+            back
+        }
+
+
+    </style>
+    <script type="text/javascript" src="../../resources/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+                $("button#passbtn").click(function(){
+                      $("div.Fail").hide()
+                      $("div.Pass").show()
+                })
+                $("button#failbtn").click(function(){
+                      $("div.Pass").hide()
+                      $("div.Fail").show()
+                })
+                $("button#Allbtn").click(function(){
+                      $("div.Pass").show()
+                      $("div.Fail").show()
+                })
+                $("button.steps").click(function(){
+                      var steps = $(this).next().text()
+                      <!--confirm(steps)-->
+                      $("#steps_box").text(steps)
+                      $("#steps_box").show()
+                })
+        })
+
+
+
+    </script>
+</head>
+<body>
+<div class="popup_container" style="display:,position:relative,Z-INDEX:9999">
+    <p id="steps_box">steps</p>
+</div>
+<div id="main_container">
+    <div id="actions">
+        <button id="passbtn">Pass</button>
+        <button id="failbtn">Fail</button>
+        <button id="Allbtn">All</button>
+        <button id="SelectAllbtn">Select All</button>
+    </div>
+    <div id="container">
+        <div class="Pass"><p>Coder Information</p><img alt="Coder Information" class="Pass" id="Coder Information"
+                                                       src="../../auto_results/screenshots/Coder Information.png"/>
+            <p>Success</p>
+            <button class="steps" style="display:">Steps</button>
+            <p style="display:none">report_separator-Coder Information
+
+                Find Element by:id, value:txtLoginid
+
+                Find Element by:id, value:txtPassword
+
+                Find Element by:id, value:btnloginText
+
+                wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+
+                wait_element_invisibility by: class name, by_target: modalOverlay
+
+                wait_document_completed---wait: 1s interactive
+
+                wait_document_completed---wait: 2s complete
+
+                Find Element by:id, value:aSlideMenuSelModuleSIP101
+
+                Find Element by:id, value:aIPModuleWorkplans
+
+                wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+
+                Find Element by:id, value:txtSearch
+
+                wait_element_clickable-by: id, by_target: txtSearch
+
+                Find Element by:id, value:spnSearch
+
+                wait_element_clickable-by: id, by_target: spnSearch
+
+                wait_element_clickable-by: partial link text, by_target: Coder Information
+
+                wait_element_visibility by: id, by_target: dvCustomSearchPopup
+
+                wait_element_clickable-by: id, by_target: btnViewReport
+
+                Find Element by:id, value:btnViewReport
+
+                wait_number_of_windows_to_be=2True=pass
+
+                wait_document_completed---wait: 1s uninitialized
+
+                wait_document_completed---wait: 2s uninitialized
+
+                wait_document_completed---wait: 3s loading
+
+                wait_document_completed---wait: 4s interactive
+
+                wait_document_completed---wait: 5s complete
+
+                wait_report_title_contains=Coder Information=Pass
+
+                close browser
+
+            </p></div>
+    </div>
+</div>
+</body>
+</html>

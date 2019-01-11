@@ -1,0 +1,30 @@
+report_separator-CMI Reimbursement Summary#
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Enterprise Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: CMI Reimbursement Summary
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s uninitialized
+wait_document_completed---wait: 4s uninitialized
+wait_document_completed---wait: 5s loading
+wait_document_completed---wait: 6s loading
+wait_document_completed---wait: 7s interactive
+wait_document_completed---wait: 8s interactive
+wait_document_completed---wait: 9s complete
+wait_report_title_contains=CMI Reimbursement Summary=Pass
+close browser
