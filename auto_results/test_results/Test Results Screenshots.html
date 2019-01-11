@@ -4,76 +4,95 @@
     <meta charset="utf-8"/>
     <title>Test Results Screenshots</title>
     <style type="text/css">
-        body{
+        body {
 
         }
-        img{
+
+        img {
             width: 450px;
             height: 400px;
         }
-        div#container div{
+
+        div#container div {
             width: 450px;
             height: 650px;
 
-            float:left;
-            word-wrap:break-word;
-            word-break:break-all;
-            <!--overflow: hidden;-->
+            float: left;
+            word-wrap: break-word;
+            word-break: break-all;
+        <!-- overflow: hidden;
+        -->
         }
-        div#main_container{
+
+        div#main_container {
             margin: 0 auto;
             padding-left: 50px;
             padding-right: 50px;
         }
-        div#actions{
+
+        div#actions {
             margin-bottom: 20px;
         }
-        div.Pass{
+
+        div.Pass {
             border-color: #006400;
             border-width: 2px;
             border-style: solid;
         }
-        div.Fail{
+
+        div.Fail {
             border-color: #FF0000;
             border-width: 2px;
             border-style: solid;
         }
-        .popup_container{
-            back
+
+        .popup_container {
+            position: absolute;
+            z-index: 9999;
+            width: 60%;
+            height: 100%;
+            margin: 50px 300px;
         }
 
+        #steps_box {
+            width: 100%;
+            height: 100%;
+            overflow-x: visible;
+        }
 
     </style>
     <script type="text/javascript" src="../../resources/js/jquery-3.3.1.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-                $("button#passbtn").click(function(){
-                      $("div.Fail").hide()
-                      $("div.Pass").show()
-                })
-                $("button#failbtn").click(function(){
-                      $("div.Pass").hide()
-                      $("div.Fail").show()
-                })
-                $("button#Allbtn").click(function(){
-                      $("div.Pass").show()
-                      $("div.Fail").show()
-                })
-                $("button.steps").click(function(){
-                      var steps = $(this).next().text()
-                      <!--confirm(steps)-->
-                      $("#steps_box").text(steps)
-                      $("#steps_box").show()
-                })
+        $(document).ready(function () {
+            $("button#passbtn").click(function () {
+                $("div.Fail").hide()
+                $("div.Pass").show()
+            })
+            $("button#failbtn").click(function () {
+                $("div.Pass").hide()
+                $("div.Fail").show()
+            })
+            $("button#Allbtn").click(function () {
+                $("div.Pass").show()
+                $("div.Fail").show()
+            })
+            $("#popup_container_close").click(function () {
+                $(".popup_container").hide()
+            });
+            $(".steps").click(function () {
+                var steps = $(this).next().text();
+                $("#steps_box").text(steps);
+                $(".popup_container").show();
+            })
         })
-
 
 
     </script>
 </head>
 <body>
-<div class="popup_container" style="display:,position:relative,Z-INDEX:9999">
-    <p id="steps_box">steps</p>
+<div class="popup_container" style="display:none">
+    <button id="popup_container_close">Close</button>
+    <textarea id="steps_box"></textarea>
 </div>
 <div id="main_container">
     <div id="actions">
