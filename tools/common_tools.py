@@ -30,7 +30,8 @@ def get_log(report_name):
     lines = f.readlines()
     steps_ = ''
     for i in lines:
-        steps_ = steps_ + i + '\n'
+        steps_ = steps_ + i
+    f.close()
     return steps_
 
 
@@ -91,14 +92,6 @@ def save_reports_screenshot_as_html(result_report):
     screenshot_title_p = soup_elements.new_tag('p')
     screenshot_title_p.string = result_report.report_name
 
-    screenshot_msg_p = soup_elements.new_tag('p')
-    screenshot_msg_p.string = result_report.msg
-
-    steps_btn_attri = {
-        'class': 'steps'
-    }
-    screenshot_steps_btn = soup_elements.new_tag('button', attrs=steps_btn_attri)
-    screenshot_steps_btn.string = 'Steps'
     steps_attri = {
         'style': 'display:none',
     }
@@ -106,17 +99,15 @@ def save_reports_screenshot_as_html(result_report):
     screenshot_steps_p.string = result_report.steps
 
     # create img tag
-    attrs = {'class': result_report.report_test_result,
+    attrs = {'class': result_report.report_test_result + ' screenshot',
              'id': result_report.report_name,
              'alt': result_report.report_name,
              'src': '../../auto_results/screenshots/' + result_report.screen_shot}
     screenshot_img = soup_elements.new_tag('img', attrs=attrs)
 
     # insert into container
-    screenshot_div.insert(new_child=screenshot_img, position=4)
-    screenshot_div.insert(new_child=screenshot_steps_p, position=3)
-    screenshot_div.insert(new_child=screenshot_steps_btn, position=2)
-    screenshot_div.insert(new_child=screenshot_msg_p, position=1)
+    screenshot_div.insert(new_child=screenshot_img, position=2)
+    screenshot_div.insert(new_child=screenshot_steps_p, position=1)
     screenshot_div.insert(new_child=screenshot_title_p, position=0)
 
     container_div.insert(new_child=screenshot_div, position=0)

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <title>Test Results Screenshots</title>
-    <style type="text/css">
+<meta charset="utf-8"/>
+<title>Test Results Screenshots</title>
+<style type="text/css">
         body {
 
         }
@@ -15,7 +15,7 @@
 
         div#container div {
             width: 450px;
-            height: 650px;
+            height: 500px;
 
             float: left;
             word-wrap: break-word;
@@ -61,9 +61,16 @@
         }
 
     </style>
-    <script type="text/javascript" src="../../resources/js/jquery-3.3.1.js"></script>
-    <script type="text/javascript">
+<script src="../../resources/js/jquery-3.3.1.js" type="text/javascript"></script>
+<script type="text/javascript">
         $(document).ready(function () {
+
+            $("img").
+            $(".pass_total").text()
+            $(".fail_total").text()
+            $(".all_total").text()
+
+
             $("button#passbtn").click(function () {
                 $("div.Fail").hide()
                 $("div.Pass").show()
@@ -79,89 +86,133 @@
             $("#popup_container_close").click(function () {
                 $(".popup_container").hide()
             });
-            $(".steps").click(function () {
+            $(".screenshot").dblclick(function () {
                 var steps = $(this).next().text();
                 $("#steps_box").text(steps);
                 $(".popup_container").show();
             })
         })
 
-
     </script>
 </head>
 <body>
 <div class="popup_container" style="display:none">
-    <button id="popup_container_close">Close</button>
-    <textarea id="steps_box"></textarea>
+<button id="popup_container_close">Close</button>
+<textarea id="steps_box"></textarea>
 </div>
 <div id="main_container">
-    <div id="actions">
-        <button id="passbtn">Pass</button>
-        <button id="failbtn">Fail</button>
-        <button id="Allbtn">All</button>
-        <button id="SelectAllbtn">Select All</button>
-    </div>
-    <div id="container">
-        <div class="Pass"><p>Coder Information</p><img alt="Coder Information" class="Pass" id="Coder Information"
-                                                       src="../../auto_results/screenshots/Coder Information.png"/>
-            <p>Success</p>
-            <button class="steps" style="display:">Steps</button>
-            <p style="display:none">report_separator-Coder Information
-
-                Find Element by:id, value:txtLoginid
-
-                Find Element by:id, value:txtPassword
-
-                Find Element by:id, value:btnloginText
-
-                wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
-
-                wait_element_invisibility by: class name, by_target: modalOverlay
-
-                wait_document_completed---wait: 1s interactive
-
-                wait_document_completed---wait: 2s complete
-
-                Find Element by:id, value:aSlideMenuSelModuleSIP101
-
-                Find Element by:id, value:aIPModuleWorkplans
-
-                wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
-
-                Find Element by:id, value:txtSearch
-
-                wait_element_clickable-by: id, by_target: txtSearch
-
-                Find Element by:id, value:spnSearch
-
-                wait_element_clickable-by: id, by_target: spnSearch
-
-                wait_element_clickable-by: partial link text, by_target: Coder Information
-
-                wait_element_visibility by: id, by_target: dvCustomSearchPopup
-
-                wait_element_clickable-by: id, by_target: btnViewReport
-
-                Find Element by:id, value:btnViewReport
-
-                wait_number_of_windows_to_be=2True=pass
-
-                wait_document_completed---wait: 1s uninitialized
-
-                wait_document_completed---wait: 2s uninitialized
-
-                wait_document_completed---wait: 3s loading
-
-                wait_document_completed---wait: 4s interactive
-
-                wait_document_completed---wait: 5s complete
-
-                wait_report_title_contains=Coder Information=Pass
-
-                close browser
-
-            </p></div>
-    </div>
+<div id="actions">
+<button id="passbtn">Pass</button><i class="pass_total"> 10</i>
+<button id="failbtn">Fail</button><i class="fail_total"> 10</i>
+<button id="Allbtn">All</button><i class="all_total"> 10</i>
+<button id="SelectAllbtn">Select All</button>
+</div>
+<div id="container"><div class="Pass"><p>Case Mix Index (CMI) Comparison</p><img alt="Case Mix Index (CMI) Comparison" class="Pass screenshot" id="Case Mix Index (CMI) Comparison" src="../../auto_results/screenshots/Case Mix Index (CMI) Comparison.png"/><p style="display:none">report_separator-Case Mix Index (CMI) Comparison#
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Enterprise Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: Case Mix Index (CMI) Comparison
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s uninitialized
+wait_document_completed---wait: 4s uninitialized
+wait_document_completed---wait: 5s uninitialized
+wait_document_completed---wait: 6s uninitialized
+wait_document_completed---wait: 7s uninitialized
+wait_document_completed---wait: 8s uninitialized
+wait_document_completed---wait: 9s uninitialized
+wait_document_completed---wait: 10s uninitialized
+wait_document_completed---wait: 11s uninitialized
+wait_document_completed---wait: 12s interactive
+wait_document_completed---wait: 13s interactive
+wait_document_completed---wait: 14s interactive
+wait_document_completed---wait: 15s complete
+wait_report_title_contains=Case Mix Index (CMI) Comparison=Pass
+close browser
+</p></div><div class="Pass"><p>Case Mix Index (CMI) Analysis</p><img alt="Case Mix Index (CMI) Analysis" class="Pass screenshot" id="Case Mix Index (CMI) Analysis" src="../../auto_results/screenshots/Case Mix Index (CMI) Analysis.png"/><p style="display:none">report_separator-Case Mix Index (CMI) Analysis#
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Enterprise Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: Case Mix Index (CMI) Analysis
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s uninitialized
+wait_document_completed---wait: 4s uninitialized
+wait_document_completed---wait: 5s uninitialized
+wait_document_completed---wait: 6s uninitialized
+wait_document_completed---wait: 7s uninitialized
+wait_document_completed---wait: 8s uninitialized
+wait_document_completed---wait: 9s uninitialized
+wait_document_completed---wait: 10s uninitialized
+wait_document_completed---wait: 11s uninitialized
+wait_document_completed---wait: 12s uninitialized
+wait_document_completed---wait: 13s uninitialized
+wait_document_completed---wait: 14s loading
+wait_document_completed---wait: 15s interactive
+wait_document_completed---wait: 16s interactive
+wait_document_completed---wait: 17s interactive
+wait_document_completed---wait: 18s interactive
+wait_document_completed---wait: 19s interactive
+wait_document_completed---wait: 20s interactive
+wait_document_completed---wait: 21s complete
+wait_report_title_contains=Case Mix Index (CMI) Analysis=Pass
+close browser
+</p></div><div class="Pass"><p>Coder Information</p><img alt="Coder Information" class="Pass screenshot" id="Coder Information" src="../../auto_results/screenshots/Coder Information.png"/><p style="display:none">report_separator-Coder Information
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: Coder Information
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s loading
+wait_document_completed---wait: 4s interactive
+wait_document_completed---wait: 5s complete
+wait_report_title_contains=Coder Information=Pass
+close browser
+</p></div></div>
 </div>
 </body>
 </html>

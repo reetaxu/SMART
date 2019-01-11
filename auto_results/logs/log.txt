@@ -588,3 +588,475 @@ wait_document_completed---wait: 2s uninitialized
 wait_document_completed---wait: 3s uninitialized
 wait_document_completed---wait: 4s uninitialized
 wait_document_completed---wait: 5s uninitialized
+get_reports_by: IP
+report_separator-Coder Information
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: Coder Information
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s uninitialized
+wait_document_completed---wait: 4s uninitialized
+wait_document_completed---wait: 5s uninitialized
+wait_document_completed---wait: 6s loading
+wait_document_completed---wait: 7s loading
+wait_document_completed---wait: 8s loading
+wait_document_completed---wait: 9s interactive
+wait_document_completed---wait: 10s interactive
+wait_document_completed---wait: 11s complete
+save_html_resource: Coder Information
+wait_report_title_contains=Coder Information=Pass
+close browser
+get_log: Coder Information
+write_test_result_report_word: Coder Information
+write_test_result_report_excel: Coder Information
+save_reports_screenshot_as_html: Coder Information
+report_separator-Case Mix Index (CMI) Analysis
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: Case Mix Index (CMI) Analysis
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s uninitialized
+wait_document_completed---wait: 4s uninitialized
+wait_document_completed---wait: 5s uninitialized
+wait_document_completed---wait: 6s uninitialized
+wait_document_completed---wait: 7s uninitialized
+wait_document_completed---wait: 8s uninitialized
+wait_document_completed---wait: 9s uninitialized
+wait_document_completed---wait: 10s loading
+wait_document_completed---wait: 11s loading
+wait_document_completed---wait: 12s loading
+wait_document_completed---wait: 13s loading
+wait_document_completed---wait: 14s loading
+wait_document_completed---wait: 15s loading
+wait_document_completed---wait: 16s loading
+wait_document_completed---wait: 17s loading
+wait_document_completed---wait: 18s interactive
+wait_document_completed---wait: 19s interactive
+wait_document_completed---wait: 20s interactive
+wait_document_completed---wait: 21s interactive
+wait_document_completed---wait: 22s interactive
+wait_document_completed---wait: 23s interactive
+wait_document_completed---wait: 24s interactive
+wait_document_completed---wait: 25s interactive
+wait_document_completed---wait: 26s interactive
+wait_document_completed---wait: 27s interactive
+wait_document_completed---wait: 28s interactive
+wait_document_completed---wait: 29s interactive
+wait_document_completed---wait: 30s complete
+save_html_resource: Case Mix Index (CMI) Analysis
+wait_report_title_contains=Case Mix Index (CMI) Analysis=Pass
+close browser
+get_log: Case Mix Index (CMI) Analysis
+write_test_result_report_word: Case Mix Index (CMI) Analysis
+write_test_result_report_excel: Case Mix Index (CMI) Analysis
+save_reports_screenshot_as_html: Case Mix Index (CMI) Analysis
+report_separator-Case Mix Index (CMI) Comparison
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s interactive
+wait_document_completed---wait: 3s interactive
+wait_document_completed---wait: 4s interactive
+wait_document_completed---wait: 5s interactive
+wait_document_completed---wait: 6s interactive
+wait_document_completed---wait: 7s interactive
+wait_document_completed---wait: 8s interactive
+wait_document_completed---wait: 9s interactive
+wait_document_completed---wait: 10s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: Case Mix Index (CMI) Comparison
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s uninitialized
+wait_document_completed---wait: 4s uninitialized
+wait_document_completed---wait: 5s uninitialized
+wait_document_completed---wait: 6s uninitialized
+wait_document_completed---wait: 7s uninitialized
+wait_document_completed---wait: 8s loading
+wait_document_completed---wait: 9s loading
+wait_document_completed---wait: 10s loading
+wait_document_completed---wait: 11s interactive
+wait_document_completed---wait: 12s interactive
+wait_document_completed---wait: 13s interactive
+wait_document_completed---wait: 14s interactive
+wait_document_completed---wait: 15s complete
+save_html_resource: Case Mix Index (CMI) Comparison
+wait_report_title_contains=Case Mix Index (CMI) Comparison=Pass
+close browser
+get_log: Case Mix Index (CMI) Comparison
+write_test_result_report_word: Case Mix Index (CMI) Comparison
+write_test_result_report_excel: Case Mix Index (CMI) Comparison
+save_reports_screenshot_as_html: Case Mix Index (CMI) Comparison
+report_separator-Case-Mix by Payer by Month
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: Case-Mix by Payer by Month
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s uninitialized
+wait_document_completed---wait: 4s uninitialized
+wait_document_completed---wait: 5s uninitialized
+wait_document_completed---wait: 6s loading
+wait_document_completed---wait: 7s loading
+wait_document_completed---wait: 8s interactive
+wait_document_completed---wait: 9s interactive
+wait_document_completed---wait: 10s interactive
+wait_document_completed---wait: 11s interactive
+wait_document_completed---wait: 12s complete
+save_html_resource: Case-Mix by Payer by Month
+wait_report_title_contains=Case-Mix by Payer by Month=Pass
+close browser
+get_log: Case-Mix by Payer by Month
+write_test_result_report_word: Case-Mix by Payer by Month
+write_test_result_report_excel: Case-Mix by Payer by Month
+save_reports_screenshot_as_html: Case-Mix by Payer by Month
+report_separator-Medicare Case-Mix by Month
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: Medicare Case-Mix by Month
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s uninitialized
+wait_document_completed---wait: 4s uninitialized
+wait_document_completed---wait: 5s uninitialized
+wait_document_completed---wait: 6s loading
+wait_document_completed---wait: 7s loading
+wait_document_completed---wait: 8s interactive
+wait_document_completed---wait: 9s interactive
+wait_document_completed---wait: 10s interactive
+wait_document_completed---wait: 11s interactive
+wait_document_completed---wait: 12s interactive
+wait_document_completed---wait: 13s interactive
+wait_document_completed---wait: 14s complete
+save_html_resource: Medicare Case-Mix by Month
+wait_report_title_contains=Medicare Case-Mix by Month=Pass
+close browser
+get_log: Medicare Case-Mix by Month
+write_test_result_report_word: Medicare Case-Mix by Month
+write_test_result_report_excel: Medicare Case-Mix by Month
+save_reports_screenshot_as_html: Medicare Case-Mix by Month
+report_separator-Attending Physician Frequency by DRG
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+get_reports_by: IP
+report_separator-Coder Information
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+Message: 
+None
+close browser
+get_log: Coder Information
+write_test_result_report_word: Coder Information
+write_test_result_report_excel: Coder Information
+save_reports_screenshot_as_html: Coder Information
+report_separator-Case Mix Index (CMI) Analysis
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: Case Mix Index (CMI) Analysis
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s uninitialized
+wait_document_completed---wait: 4s uninitialized
+wait_document_completed---wait: 5s uninitialized
+wait_document_completed---wait: 6s uninitialized
+wait_document_completed---wait: 7s uninitialized
+wait_document_completed---wait: 8s uninitialized
+wait_document_completed---wait: 9s uninitialized
+wait_document_completed---wait: 10s loading
+wait_document_completed---wait: 11s loading
+wait_document_completed---wait: 12s loading
+wait_document_completed---wait: 13s loading
+wait_document_completed---wait: 14s loading
+wait_document_completed---wait: 15s loading
+wait_document_completed---wait: 16s loading
+wait_document_completed---wait: 17s loading
+wait_document_completed---wait: 18s loading
+wait_document_completed---wait: 19s loading
+wait_document_completed---wait: 20s loading
+wait_document_completed---wait: 21s loading
+wait_document_completed---wait: 22s loading
+wait_document_completed---wait: 23s loading
+wait_document_completed---wait: 24s loading
+wait_document_completed---wait: 25s interactive
+wait_document_completed---wait: 26s interactive
+wait_document_completed---wait: 27s interactive
+wait_document_completed---wait: 28s interactive
+wait_document_completed---wait: 29s interactive
+wait_document_completed---wait: 30s interactive
+wait_document_completed---wait: 31s interactive
+wait_document_completed---wait: 32s interactive
+wait_document_completed---wait: 33s interactive
+wait_document_completed---wait: 34s interactive
+wait_document_completed---wait: 35s interactive
+wait_document_completed---wait: 36s interactive
+wait_document_completed---wait: 37s complete
+save_html_resource: Case Mix Index (CMI) Analysis
+wait_report_title_contains=Case Mix Index (CMI) Analysis=Pass
+close browser
+get_log: Case Mix Index (CMI) Analysis
+write_test_result_report_word: Case Mix Index (CMI) Analysis
+write_test_result_report_excel: Case Mix Index (CMI) Analysis
+save_reports_screenshot_as_html: Case Mix Index (CMI) Analysis
+report_separator-Case Mix Index (CMI) Comparison
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+get_reports_by: IP
+report_separator-Coder Information
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: Coder Information
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s loading
+wait_document_completed---wait: 3s loading
+wait_document_completed---wait: 4s loading
+wait_document_completed---wait: 5s interactive
+wait_document_completed---wait: 6s interactive
+wait_document_completed---wait: 7s interactive
+wait_document_completed---wait: 8s complete
+save_html_resource: Coder Information
+wait_report_title_contains=Coder Information=Pass
+close browser
+get_log: Coder Information
+write_test_result_report_word: Coder Information
+write_test_result_report_excel: Coder Information
+save_reports_screenshot_as_html: Coder Information
+report_separator-Case Mix Index (CMI) Analysis
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: Case Mix Index (CMI) Analysis
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s uninitialized
+wait_document_completed---wait: 4s uninitialized
+wait_document_completed---wait: 5s uninitialized
+wait_document_completed---wait: 6s uninitialized
+wait_document_completed---wait: 7s uninitialized
+wait_document_completed---wait: 8s loading
+wait_document_completed---wait: 9s loading
+wait_document_completed---wait: 10s loading
+wait_document_completed---wait: 11s loading
+wait_document_completed---wait: 12s loading
+wait_document_completed---wait: 13s interactive
+wait_document_completed---wait: 14s interactive
+wait_document_completed---wait: 15s interactive
+wait_document_completed---wait: 16s interactive
+wait_document_completed---wait: 17s interactive
+wait_document_completed---wait: 18s interactive
+wait_document_completed---wait: 19s interactive
+wait_document_completed---wait: 20s interactive
+wait_document_completed---wait: 21s interactive
+wait_document_completed---wait: 22s complete
+save_html_resource: Case Mix Index (CMI) Analysis
+wait_report_title_contains=Case Mix Index (CMI) Analysis=Pass
+close browser
+get_log: Case Mix Index (CMI) Analysis
+write_test_result_report_word: Case Mix Index (CMI) Analysis
+write_test_result_report_excel: Case Mix Index (CMI) Analysis
+save_reports_screenshot_as_html: Case Mix Index (CMI) Analysis
+report_separator-Case Mix Index (CMI) Comparison
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+wait_element_invisibility by: class name, by_target: modalOverlay
+wait_document_completed---wait: 1s interactive
+wait_document_completed---wait: 2s interactive
+wait_document_completed---wait: 3s interactive
+wait_document_completed---wait: 4s interactive
+wait_document_completed---wait: 5s interactive
+wait_document_completed---wait: 6s interactive
+wait_document_completed---wait: 7s interactive
+wait_document_completed---wait: 8s interactive
+wait_document_completed---wait: 9s interactive
+wait_document_completed---wait: 10s interactive
+wait_document_completed---wait: 11s interactive
+wait_document_completed---wait: 12s interactive
+wait_document_completed---wait: 13s interactive
+wait_document_completed---wait: 14s interactive
+wait_document_completed---wait: 15s interactive
+wait_document_completed---wait: 16s interactive
+wait_document_completed---wait: 17s interactive
+wait_document_completed---wait: 18s interactive
+wait_document_completed---wait: 19s interactive
+wait_document_completed---wait: 20s interactive
+wait_document_completed---wait: 21s complete
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Find Element by:id, value:aIPModuleWorkplans
+wait_element_clickable-by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Find Element by:id, value:txtSearch
+wait_element_clickable-by: id, by_target: txtSearch
+Find Element by:id, value:spnSearch
+wait_element_clickable-by: id, by_target: spnSearch
+wait_element_clickable-by: partial link text, by_target: Case Mix Index (CMI) Comparison
+wait_element_visibility by: id, by_target: dvCustomSearchPopup
+wait_element_clickable-by: id, by_target: btnViewReport
+Find Element by:id, value:btnViewReport
+wait_number_of_windows_to_be=2True=pass
+wait_document_completed---wait: 1s uninitialized
+wait_document_completed---wait: 2s uninitialized
+wait_document_completed---wait: 3s uninitialized
+wait_document_completed---wait: 4s uninitialized
+wait_document_completed---wait: 5s loading
+wait_document_completed---wait: 6s loading
+wait_document_completed---wait: 7s interactive
+wait_document_completed---wait: 8s interactive
+wait_document_completed---wait: 9s interactive
+wait_document_completed---wait: 10s interactive
+wait_document_completed---wait: 11s interactive
+wait_document_completed---wait: 12s interactive
+wait_document_completed---wait: 13s complete
+save_html_resource: Case Mix Index (CMI) Comparison
+wait_report_title_contains=Case Mix Index (CMI) Comparison=Pass
+close browser
+get_log: Case Mix Index (CMI) Comparison
+write_test_result_report_word: Case Mix Index (CMI) Comparison
+write_test_result_report_excel: Case Mix Index (CMI) Comparison
+save_reports_screenshot_as_html: Case Mix Index (CMI) Comparison
+report_separator-Case-Mix by Payer by Month
+Find Element by:id, value:txtLoginid
+Find Element by:id, value:txtPassword
+Find Element by:id, value:btnloginText
+wait_element_clickable-by: id, by_target: aSlideMenuSelModuleSIP101
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+Message: 
+None
+close browser
+get_log: Case-Mix by Payer by Month
+write_test_result_report_word: Case-Mix by Payer by Month
+write_test_result_report_excel: Case-Mix by Payer by Month
+save_reports_screenshot_as_html: Case-Mix by Payer by Month
+report_separator-Medicare Case-Mix by Month
