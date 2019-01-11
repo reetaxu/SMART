@@ -65,10 +65,13 @@
 <script type="text/javascript">
         $(document).ready(function () {
 
-            $("img").
-            $(".pass_total").text()
-            $(".fail_total").text()
-            $(".all_total").text()
+
+                var img_len = $("img").length
+                var fail_len = $("img.Fail").length
+                var pass_len = $("img.Pass").length
+                $(".pass_total").text(pass_len)
+                $(".fail_total").text(fail_len)
+                $(".all_total").text(img_len)
 
 
             $("button#passbtn").click(function () {
@@ -102,12 +105,12 @@
 </div>
 <div id="main_container">
 <div id="actions">
-<button id="passbtn">Pass</button><i class="pass_total"> 10</i>
-<button id="failbtn">Fail</button><i class="fail_total"> 10</i>
-<button id="Allbtn">All</button><i class="all_total"> 10</i>
-<button id="SelectAllbtn">Select All</button>
+<button id="passbtn">Pass</button>&nbsp&nbsp<i class="pass_total"> 10</i>&nbsp&nbsp&nbsp&nbsp
+<button id="failbtn">Fail</button>&nbsp&nbsp<i class="fail_total"> 10</i>&nbsp&nbsp&nbsp&nbsp
+<button id="Allbtn">All</button>&nbsp&nbsp<i class="all_total"> 10</i>&nbsp&nbsp&nbsp&nbsp
 </div>
-<div id="container"><div class="Pass"><p>Case Mix Index (CMI) Comparison</p><img alt="Case Mix Index (CMI) Comparison" class="Pass screenshot" id="Case Mix Index (CMI) Comparison" src="../../auto_results/screenshots/Case Mix Index (CMI) Comparison.png"/><p style="display:none">report_separator-Case Mix Index (CMI) Comparison#
+<div id="container"><div class="Pass"><p>Case Mix Index (CMI) Comparison</p>
+    <img alt="Case Mix Index (CMI) Comparison" class="Pass screenshot" id="Case Mix Index (CMI) Comparison" src="../../auto_results/screenshots/Case Mix Index (CMI) Comparison.png"/><p style="display:none">report_separator-Case Mix Index (CMI) Comparison#
 Find Element by:id, value:txtLoginid
 Find Element by:id, value:txtPassword
 Find Element by:id, value:btnloginText
@@ -143,7 +146,7 @@ wait_document_completed---wait: 14s interactive
 wait_document_completed---wait: 15s complete
 wait_report_title_contains=Case Mix Index (CMI) Comparison=Pass
 close browser
-</p></div><div class="Pass"><p>Case Mix Index (CMI) Analysis</p><img alt="Case Mix Index (CMI) Analysis" class="Pass screenshot" id="Case Mix Index (CMI) Analysis" src="../../auto_results/screenshots/Case Mix Index (CMI) Analysis.png"/><p style="display:none">report_separator-Case Mix Index (CMI) Analysis#
+</p></div><div class="Pass"><p>Case Mix Index (CMI) Analysis</p><img alt="Case Mix Index (CMI) Analysis" class="Fail screenshot" id="Case Mix Index (CMI) Analysis" src="../../auto_results/screenshots/Case Mix Index (CMI) Analysis.png"/><p style="display:none">report_separator-Case Mix Index (CMI) Analysis#
 Find Element by:id, value:txtLoginid
 Find Element by:id, value:txtPassword
 Find Element by:id, value:btnloginText
