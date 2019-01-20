@@ -1,4 +1,24 @@
-write_test_result_report_word: Summary by Primary Flag
-write_test_result_report_excel: Summary by Primary Flag
-save_reports_screenshot_as_html: Summary by Primary Flag
-report_names:>>>>>Summary by Primary Flag with Revision Information
+Start to initial a browser
+Report name: >>>>>IPSTDiagnosis Code Usage by Payer
+Navigating to url: http://strzw058051/SMARTSolutions/
+Navigated to url: http://strzw058051/SMARTSolutions/
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:txtLoginid
+Wait until element is clickable, by: id, value: txtLoginid
+Wait until element is clickable: exception occurred, by: id, value: txtLoginid
+Message: Failed to decode response from marionette
+
+Wait until element is visible, by: id, by_target: txtLoginid
+Element is not visible, by: id, value: txtLoginid
+Message: Tried to run command without establishing a connection
+
+----------Listening: exception occurred----------
+Message: Tried to run command without establishing a connection
+
+----------Listening: exception occurred----------
+Message: Tried to run command without establishing a connection
+None
+----------Listening: exception occurred----------
+Message: Tried to run command without establishing a connection
+
+Start to initial a browser

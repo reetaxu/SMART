@@ -1,0 +1,90 @@
+Start to initial a browser
+Report name: >>>>>OPSTEstimated Line Item Reimbursement Impact Summary by Body System
+Navigating to url: http://strzw058051/SMARTSolutions/
+Navigated to url: http://strzw058051/SMARTSolutions/
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:txtLoginid
+Wait until element is clickable, by: id, value: txtLoginid
+Wait until element is visible, by: id, by_target: txtLoginid
+Element is visible, by: id, value: txtLoginid
+Wait until element is clickable, by: id, value: txtLoginid
+Element found: by-id, value-txtLoginid
+Values entered
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:txtPassword
+Wait until element is clickable, by: id, value: txtPassword
+Wait until element is visible, by: id, by_target: txtPassword
+Element is visible, by: id, value: txtPassword
+Wait until element is clickable, by: id, value: txtPassword
+Element found: by-id, value-txtPassword
+Values entered
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:btnloginText
+Wait until element is clickable, by: id, value: btnloginText
+Wait until element is visible, by: id, by_target: btnloginText
+Element is visible, by: id, value: btnloginText
+Wait until element is clickable, by: id, value: btnloginText
+Element found: by-id, value-btnloginText
+Element Clicked
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:aSlideMenuSelModuleOP101
+Wait until element is clickable, by: id, value: aSlideMenuSelModuleOP101
+Wait until element is visible, by: id, by_target: aSlideMenuSelModuleOP101
+Element is visible, by: id, value: aSlideMenuSelModuleOP101
+Wait until element is clickable, by: id, value: aSlideMenuSelModuleOP101
+Element found: by-id, value-aSlideMenuSelModuleOP101
+Wait until element is invisible, by: class name, by_target: modalOverlay
+Element found: by-class name, value-modalOverlay
+----------Listening: exception occurred----------
+Message: The element reference of <div class="modalOverlay"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+
+Element Clicked
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:aOPModuleWorkplans
+Wait until element is clickable, by: id, value: aOPModuleWorkplans
+Wait until element is visible, by: id, by_target: aOPModuleWorkplans
+Element is visible, by: id, value: aOPModuleWorkplans
+Wait until element is clickable, by: id, value: aOPModuleWorkplans
+Element found: by-id, value-aOPModuleWorkplans
+Element Clicked
+------------------------------------------------------------------------------------------------
+Wait until element is clickable, by: xpath, value: //span[contains(text(),"Standard Reports")]
+Wait until element is visible, by: xpath, by_target: //span[contains(text(),"Standard Reports")]
+Element is visible, by: xpath, value: //span[contains(text(),"Standard Reports")]
+Wait until element is clickable, by: xpath, value: //span[contains(text(),"Standard Reports")]
+Element found: by-xpath, value-//span[contains(text(),"Standard Reports")]
+Element Clicked
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:txtSearch
+Wait until element is clickable, by: id, value: txtSearch
+Wait until element is visible, by: id, by_target: txtSearch
+Element is visible, by: id, value: txtSearch
+Wait until element is clickable, by: id, value: txtSearch
+Element found: by-id, value-txtSearch
+Values entered
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:spnSearch
+Wait until element is clickable, by: id, value: spnSearch
+Wait until element is visible, by: id, by_target: spnSearch
+Element is visible, by: id, value: spnSearch
+Wait until element is clickable, by: id, value: spnSearch
+Element found: by-id, value-spnSearch
+Element Clicked
+------------------------------------------------------------------------------------------------
+Wait until element is clickable, by: partial link text, value: Estimated Line Item Reimbursement Impact Summary by Body System
+Wait until element is clickable: exception occurred, by: partial link text, value: Estimated Line Item Reimbursement Impact Summary by Body System
+Message: 
+
+Wait until element is visible, by: partial link text, by_target: Estimated Line Item Reimbursement Impact Summary by Body System
+Element is not visible, by: partial link text, value: Estimated Line Item Reimbursement Impact Summary by Body System
+Message: 
+
+----------Listening: exception occurred----------
+Message: Unable to locate element: Estimated Line Item Reimbursement Impact Summary by Body System
+
+----------Listening: exception occurred----------
+Message: Unable to locate element: Estimated Line Item Reimbursement Impact Summary by Body System
+None

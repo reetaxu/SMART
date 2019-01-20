@@ -34,13 +34,13 @@
             margin-bottom: 20px;
         }
 
-        div.Pass {
+        div.True {
             border-color: #006400;
             border-width: 2px;
             border-style: solid;
         }
 
-        div.Fail {
+        div.False {
             border-color: #FF0000;
             border-width: 2px;
             border-style: solid;
@@ -66,23 +66,23 @@
         $(document).ready(function () {
 
                 var img_len = $("img").length
-                var fail_len = $("img.Fail").length
-                var pass_len = $("img.Pass").length
+                var fail_len = $("img.False").length
+                var pass_len = $("img.True").length
                 $(".pass_total").text(pass_len)
                 $(".fail_total").text(fail_len)
                 $(".all_total").text(img_len)
 
             $("button#passbtn").click(function () {
-                $("div.Fail").hide()
-                $("div.Pass").show()
+                $("div.False").hide()
+                $("div.True").show()
             })
             $("button#failbtn").click(function () {
-                $("div.Pass").hide()
-                $("div.Fail").show()
+                $("div.True").hide()
+                $("div.False").show()
             })
             $("button#Allbtn").click(function () {
-                $("div.Pass").show()
-                $("div.Fail").show()
+                $("div.True").show()
+                $("div.False").show()
             })
             $("#popup_container_close").click(function () {
                 $(".popup_container").hide()

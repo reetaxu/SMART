@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 from common import settings, actions, smart_driver
 from selenium.webdriver.common.action_chains import ActionChains
 from tools import common_tools
+from pages import login
 from parameterized import parameterized
 from modals.report_test_result import result_report
 
@@ -19,66 +20,85 @@ class Reports(object):
 
     def find_report_double_click(self, report_name):
 
-        if report_name.endswith('#'):
+        login.Login(driver=self.driver, username='admin', password='Admin').login()
+
+        ip_or_op = ''
+        standard_or_enterprise = ''
+
+        if report_name.startswith('IPEN'):
             standard_or_enterprise = 'enterprise'
-            report_name = report_name.rstrip('#')
-        else:
+            ip_or_op = 'IP'
+            report_name = report_name.lstrip('IPEN')
+        elif report_name.startswith('IPST'):
             standard_or_enterprise = 'standard'
-
-        self.report_name = report_name
-        self.driver.get(settings.url)
-
-        login_ele = self.driver.find_element_(By.ID, 'txtLoginid')
-        password_ele = self.driver.find_element_(By.ID, 'txtPassword')
-        login_ele_btn = self.driver.find_element_(By.ID, 'btnloginText')
-
-        login_ele.clear()
-        login_ele.send_keys('admin')
-
-        password_ele.clear()
-        password_ele.send_keys('Admin')
-        login_ele_btn.click()
+            ip_or_op = 'IP'
+            report_name = report_name.lstrip('IPST')
+        elif report_name.startswith('OPST'):
+            standard_or_enterprise = 'standard'
+            ip_or_op = 'OP'
+            report_name = report_name.lstrip('OPST')
+        elif report_name.startswith('OPEN'):
+            ip_or_op = 'OP'
+            standard_or_enterprise = 'enterprise'
+            report_name = report_name.lstrip('OPEN')
+        else:
+            pass
 
         # click Inpatient
-        actions.wait_element_clickable(self.driver, By.ID, 'aSlideMenuSelModuleSIP101')
-        actions.wait_element_invisibility(self.driver, By.CLASS_NAME, 'modalOverlay')
-        inpatient = self.driver.find_element_(By.ID, 'aSlideMenuSelModuleSIP101')
-        inpatient.click()
+        if 'IP' in ip_or_op:
+            inpatient = self.driver.find_element_(By.ID, 'aSlideMenuSelModuleSIP101')
+            actions.wait_element_invisibility(self.driver, By.CLASS_NAME, 'modalOverlay')
+            inpatient.click()
 
-        # Click "report"
-        report = self.driver.find_element_(By.ID, 'aIPModuleWorkplans')
-        report.click()
+            # Click "report"
+            report = self.driver.find_element_(By.ID, 'aIPModuleWorkplans')
+            report.click()
 
-        # click enterprise_reports_link
-        standard_reports_link_xpath = '//span[text()="Inpatient Standard Reports"]'
-        enterprise_reports_link = '//span[text()="Inpatient Enterprise Reports"]'
+        if 'OP' in ip_or_op:
+            inpatient = self.driver.find_element_(By.ID, 'aSlideMenuSelModuleOP101')
+            actions.wait_element_invisibility(self.driver, By.CLASS_NAME, 'modalOverlay')
+            inpatient.click()
+            # Click "report"
+            report = self.driver.find_element_(By.ID, 'aOPModuleWorkplans')
+            report.click()
+
+        standard_reports_link_xpath = '//span[contains(text(),"Standard Reports")]'
+        enterprise_reports_link = '//span[contains(text(),"Enterprise Reports")]'
 
         if standard_or_enterprise in 'standard':
             reports_link_xpath = standard_reports_link_xpath
         else:
             reports_link_xpath = enterprise_reports_link
 
-        actions.wait_element_clickable(self.driver, By.XPATH, reports_link_xpath)
+        # actions.wait_element_clickable(self.driver, By.XPATH, reports_link_xpath)
         reports_link = self.driver.find_element_by_xpath(reports_link_xpath)
         reports_link.click()
 
         # enter report name
         report_name_input_id = 'txtSearch'
         report_name_input = self.driver.find_element_(By.ID, report_name_input_id)
-        actions.wait_element_clickable(self.driver, By.ID, report_name_input_id)
-        report_name_input.clear()
+        # actions.wait_element_clickable(self.driver, By.ID, report_name_input_id)
+        # report_name_input.clear()
         report_name_input.send_keys(report_name)
 
         # click search button
         report_search_btn_id = 'spnSearch'
         report_search_btn = self.driver.find_element_(By.ID, report_search_btn_id)
-        actions.wait_element_clickable(self.driver, By.ID, report_search_btn_id)
+        # actions.wait_element_clickable(self.driver, By.ID, report_search_btn_id)
         report_search_btn.click()
 
         # find and Open report
-        actions.wait_element_clickable(self.driver, By.PARTIAL_LINK_TEXT, report_name)
+        # actions.wait_element_clickable(self.driver, By.PARTIAL_LINK_TEXT, report_name)
         report_enter_link = self.driver.find_element_by_partial_link_text(report_name)
-        ActionChains(self.driver).double_click(report_enter_link).perform()
+
+        script = '$("a:contains(' + report_name + ')").click()'
+        self.driver.execute_script(script)
+        script = "var evt = document.createEvent('MouseEvents');" \
+                 + "evt.initMouseEvent('dblclick',true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0,null);" \
+                 + "arguments[0].dispatchEvent(evt);"
+        # ActionChains(self.driver).move_to_element(report_enter_link).double_click()
+
+        self.driver.execute_script(script, report_enter_link)
 
         return report_name
 

@@ -1,0 +1,43 @@
+Start to initial a browser
+Report name: >>>>>OPSTEvaluation & Management Clinical Profile
+Navigating to url: http://strzw058051/SMARTSolutions/
+Navigated to url: http://strzw058051/SMARTSolutions/
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:txtLoginid
+Wait until element is clickable, by: id, value: txtLoginid
+Wait until element is visible, by: id, by_target: txtLoginid
+Element is visible, by: id, value: txtLoginid
+Wait until element is clickable, by: id, value: txtLoginid
+Element found: by-id, value-txtLoginid
+Values entered
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:txtPassword
+Wait until element is clickable, by: id, value: txtPassword
+Wait until element is visible, by: id, by_target: txtPassword
+Element is visible, by: id, value: txtPassword
+Wait until element is clickable, by: id, value: txtPassword
+Element found: by-id, value-txtPassword
+Values entered
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:btnloginText
+Wait until element is clickable, by: id, value: btnloginText
+Wait until element is visible, by: id, by_target: btnloginText
+Element is visible, by: id, value: btnloginText
+Wait until element is clickable, by: id, value: btnloginText
+Element found: by-id, value-btnloginText
+Element Clicked
+------------------------------------------------------------------------------------------------
+Wait until element is clickable, by: xpath, value: //span[contains(text(),"Standard Reports")]
+Wait until element is clickable: exception occurred, by: xpath, value: //span[contains(text(),"Standard Reports")]
+Message: 
+
+Wait until element is visible, by: xpath, by_target: //span[contains(text(),"Standard Reports")]
+Element is not visible, by: xpath, value: //span[contains(text(),"Standard Reports")]
+Message: 
+
+----------Listening: exception occurred----------
+Message: Unable to locate element: //span[contains(text(),"Standard Reports")]
+
+----------Listening: exception occurred----------
+Message: Unable to locate element: //span[contains(text(),"Standard Reports")]
+None

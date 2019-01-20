@@ -1,0 +1,89 @@
+Start to initial a browser
+Report name: >>>>>IPENMedicare HAC Potential Impact
+Navigating to url: http://strzw058051/SMARTSolutions/
+Navigated to url: http://strzw058051/SMARTSolutions/
+--------------------------------
+Find Element by:id, value:txtLoginid
+Wait until element is clickable, by: id, value: txtLoginid
+Wait until element is visible, by: id, by_target: txtLoginid
+Element is visible, by: id, value: txtLoginid
+Wait until element is clickable, by: id, value: txtLoginid
+Element found: by-id, value-txtLoginid
+Values entered
+--------------------------------
+Find Element by:id, value:txtPassword
+Wait until element is clickable, by: id, value: txtPassword
+Wait until element is visible, by: id, by_target: txtPassword
+Element is visible, by: id, value: txtPassword
+Wait until element is clickable, by: id, value: txtPassword
+Element found: by-id, value-txtPassword
+Values entered
+--------------------------------
+Find Element by:id, value:btnloginText
+Wait until element is clickable, by: id, value: btnloginText
+Wait until element is visible, by: id, by_target: btnloginText
+Element is visible, by: id, value: btnloginText
+Wait until element is clickable, by: id, value: btnloginText
+Element found: by-id, value-btnloginText
+Element Clicked
+--------------------------------
+--------------------------------
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Wait until element is clickable, by: id, value: aSlideMenuSelModuleSIP101
+Wait until element is visible, by: id, by_target: aSlideMenuSelModuleSIP101
+Element is visible, by: id, value: aSlideMenuSelModuleSIP101
+Wait until element is clickable, by: id, value: aSlideMenuSelModuleSIP101
+Element found: by-id, value-aSlideMenuSelModuleSIP101
+Wait until element is invisible, by: class name, by_target: modalOverlay
+----------Listening: exception occurred----------
+Message: Unable to locate element: .modalOverlay
+
+Element Clicked
+--------------------------------
+--------------------------------
+Find Element by:id, value:aIPModuleWorkplans
+Wait until element is clickable, by: id, value: aIPModuleWorkplans
+Wait until element is visible, by: id, by_target: aIPModuleWorkplans
+Element is visible, by: id, value: aIPModuleWorkplans
+Wait until element is clickable, by: id, value: aIPModuleWorkplans
+Element found: by-id, value-aIPModuleWorkplans
+Element Clicked
+--------------------------------
+Wait until element is clickable, by: xpath, value: //span[contains(text(),"Enterprise Reports")]
+Wait until element is visible, by: xpath, by_target: //span[contains(text(),"Enterprise Reports")]
+Element is visible, by: xpath, value: //span[contains(text(),"Enterprise Reports")]
+Wait until element is clickable, by: xpath, value: //span[contains(text(),"Enterprise Reports")]
+Element found: by-xpath, value-//span[contains(text(),"Enterprise Reports")]
+Element Clicked
+--------------------------------
+--------------------------------
+Find Element by:id, value:txtSearch
+Wait until element is clickable, by: id, value: txtSearch
+Wait until element is visible, by: id, by_target: txtSearch
+Element is visible, by: id, value: txtSearch
+Wait until element is clickable, by: id, value: txtSearch
+Element found: by-id, value-txtSearch
+Values entered
+--------------------------------
+Find Element by:id, value:spnSearch
+Wait until element is clickable, by: id, value: spnSearch
+Wait until element is visible, by: id, by_target: spnSearch
+Element is visible, by: id, value: spnSearch
+Wait until element is clickable, by: id, value: spnSearch
+Element found: by-id, value-spnSearch
+Element Clicked
+--------------------------------
+Wait until element is clickable, by: partial link text, value: Medicare HAC Potential Impact
+Wait until element is clickable: exception occurred, by: partial link text, value: Medicare HAC Potential Impact
+Message: 
+
+Wait until element is visible, by: partial link text, by_target: Medicare HAC Potential Impact
+Element is not visible, by: partial link text, value: Medicare HAC Potential Impact
+Message: 
+
+----------Listening: exception occurred----------
+Message: Unable to locate element: Medicare HAC Potential Impact
+
+----------Listening: exception occurred----------
+Message: Unable to locate element: Medicare HAC Potential Impact
+None

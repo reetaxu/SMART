@@ -1,0 +1,9 @@
+Start to initial a browser
+Report name: >>>>>IPSTPresent on Admission(POA) Comparison
+Navigating to url: http://strzw058051/SMARTSolutions/
+----------Listening: exception occurred----------
+Message: Timeout loading page after 300000ms
+
+----------Listening: exception occurred----------
+Message: Timeout loading page after 300000ms
+None

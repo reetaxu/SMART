@@ -1,0 +1,112 @@
+Start to initial a browser
+Report name: >>>>>DRG Change Condition Detail
+Navigating to url: http://strzw058051/SMARTSolutions/
+Navigated to url: http://strzw058051/SMARTSolutions/
+--------------------------------
+Find Element by:id, value:txtLoginid
+Wait until element is clickable, by: id, value: txtLoginid
+Wait until element is visible, by: id, by_target: txtLoginid
+Element is visible, by: id, value: txtLoginid
+Wait until element is clickable, by: id, value: txtLoginid
+Element found: by-id, value-txtLoginid
+Values entered
+--------------------------------
+Find Element by:id, value:txtPassword
+Wait until element is clickable, by: id, value: txtPassword
+Wait until element is visible, by: id, by_target: txtPassword
+Element is visible, by: id, value: txtPassword
+Wait until element is clickable, by: id, value: txtPassword
+Element found: by-id, value-txtPassword
+Values entered
+--------------------------------
+Find Element by:id, value:btnloginText
+Wait until element is clickable, by: id, value: btnloginText
+Wait until element is visible, by: id, by_target: btnloginText
+Element is visible, by: id, value: btnloginText
+Wait until element is clickable, by: id, value: btnloginText
+Element found: by-id, value-btnloginText
+Element Clicked
+--------------------------------
+--------------------------------
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Wait until element is clickable, by: id, value: aSlideMenuSelModuleSIP101
+Wait until element is visible, by: id, by_target: aSlideMenuSelModuleSIP101
+Element is visible, by: id, value: aSlideMenuSelModuleSIP101
+Wait until element is clickable, by: id, value: aSlideMenuSelModuleSIP101
+Element found: by-id, value-aSlideMenuSelModuleSIP101
+Wait until element is invisible, by: class name, by_target: modalOverlay
+----------Listening: exception occurred----------
+Message: Unable to locate element: .modalOverlay
+
+Element Clicked
+--------------------------------
+--------------------------------
+Find Element by:id, value:aIPModuleWorkplans
+Wait until element is clickable, by: id, value: aIPModuleWorkplans
+Wait until element is visible, by: id, by_target: aIPModuleWorkplans
+Element is visible, by: id, value: aIPModuleWorkplans
+Wait until element is clickable, by: id, value: aIPModuleWorkplans
+Element found: by-id, value-aIPModuleWorkplans
+Element Clicked
+--------------------------------
+Wait until element is clickable, by: xpath, value: //span[text()="Inpatient Standard Reports"]
+Wait until element is visible, by: xpath, by_target: //span[text()="Inpatient Standard Reports"]
+Element is visible, by: xpath, value: //span[text()="Inpatient Standard Reports"]
+Wait until element is clickable, by: xpath, value: //span[text()="Inpatient Standard Reports"]
+Element found: by-xpath, value-//span[text()="Inpatient Standard Reports"]
+Element Clicked
+--------------------------------
+--------------------------------
+Find Element by:id, value:txtSearch
+Wait until element is clickable, by: id, value: txtSearch
+Wait until element is visible, by: id, by_target: txtSearch
+Element is visible, by: id, value: txtSearch
+Wait until element is clickable, by: id, value: txtSearch
+Element found: by-id, value-txtSearch
+Values entered
+--------------------------------
+Find Element by:id, value:spnSearch
+Wait until element is clickable, by: id, value: spnSearch
+Wait until element is visible, by: id, by_target: spnSearch
+Element is visible, by: id, value: spnSearch
+Wait until element is clickable, by: id, value: spnSearch
+Element found: by-id, value-spnSearch
+Element Clicked
+--------------------------------
+Wait until element is clickable, by: partial link text, value: DRG Change Condition Detail
+Wait until element is visible, by: partial link text, by_target: DRG Change Condition Detail
+Element is visible, by: partial link text, value: DRG Change Condition Detail
+Wait until element is clickable, by: partial link text, value: DRG Change Condition Detail
+Element found: by-partial link text, value-DRG Change Condition Detail
+Going to click report name
+Report name is clicked
+--------------------------------
+Wait until element is visible, by: id, by_target: dvCustomSearchPopup
+Wait until element is clickable, by: id, value: dvCustomSearchPopup
+Wait until element is visible, by: id, by_target: dvCustomSearchPopup
+Element is visible, by: id, value: dvCustomSearchPopup
+Wait until element is clickable, by: id, value: dvCustomSearchPopup
+Element found: by-id, value-dvCustomSearchPopup
+Element is visible, by: id, value: dvCustomSearchPopup
+Wait until element is clickable, by: id, value: btnViewReport
+Wait until element is clickable, by: id, value: btnViewReport
+Wait until element is visible, by: id, by_target: btnViewReport
+Element is visible, by: id, value: btnViewReport
+Wait until element is clickable, by: id, value: btnViewReport
+Element found: by-id, value-btnViewReport
+--------------------------------
+Find Element by:id, value:btnViewReport
+Wait until element is clickable, by: id, value: btnViewReport
+Wait until element is visible, by: id, by_target: btnViewReport
+Element is visible, by: id, value: btnViewReport
+Wait until element is clickable, by: id, value: btnViewReport
+Element found: by-id, value-btnViewReport
+Element Clicked
+--------------------------------
+wait_number_of_windows_to_be=2True=pass
+Wait until paged loaded fully---wait: 1s uninitialized
+Wait until paged loaded fully---wait: 2s uninitialized
+Wait until paged loaded fully---wait: 3s loading
+Wait until paged loaded fully---wait: 4s interactive
+Wait until paged loaded fully---wait: 5s complete
+wait_report_title_contains: DRG Change Detail= Pass

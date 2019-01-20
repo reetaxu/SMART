@@ -1,0 +1,45 @@
+Start to initial a browser
+Report name: >>>>>IPSTSecurity Administration Information by Role
+Navigating to url: http://strzw058051/SMARTSolutions/
+Navigated to url: http://strzw058051/SMARTSolutions/
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:txtLoginid
+Wait until element is clickable, by: id, value: txtLoginid
+Wait until element is visible, by: id, by_target: txtLoginid
+Element is visible, by: id, value: txtLoginid
+Wait until element is clickable, by: id, value: txtLoginid
+Element found: by-id, value-txtLoginid
+Values entered
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:txtPassword
+Wait until element is clickable, by: id, value: txtPassword
+Wait until element is visible, by: id, by_target: txtPassword
+Element is visible, by: id, value: txtPassword
+Wait until element is clickable, by: id, value: txtPassword
+Element found: by-id, value-txtPassword
+Values entered
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:btnloginText
+Wait until element is clickable, by: id, value: btnloginText
+Wait until element is visible, by: id, by_target: btnloginText
+Element is visible, by: id, value: btnloginText
+Wait until element is clickable, by: id, value: btnloginText
+Element found: by-id, value-btnloginText
+Element Clicked
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:aSlideMenuSelModuleSIP101
+Wait until element is clickable, by: id, value: aSlideMenuSelModuleSIP101
+Wait until element is clickable: exception occurred, by: id, value: aSlideMenuSelModuleSIP101
+Message: 
+
+Wait until element is visible, by: id, by_target: aSlideMenuSelModuleSIP101
+Element is not visible, by: id, value: aSlideMenuSelModuleSIP101
+Message: 
+
+----------Listening: exception occurred----------
+Message: Unable to locate element: [id="aSlideMenuSelModuleSIP101"]
+
+----------Listening: exception occurred----------
+Message: Unable to locate element: [id="aSlideMenuSelModuleSIP101"]
+None

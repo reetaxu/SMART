@@ -1,0 +1,151 @@
+Start to initial a browser
+Report name: >>>>>OPSTCoder Profile
+Navigating to url: http://strzw058051/SMARTSolutions/
+Navigated to url: http://strzw058051/SMARTSolutions/
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:txtLoginid
+Wait until element is clickable, by: id, value: txtLoginid
+Wait until element is visible, by: id, by_target: txtLoginid
+Element is visible, by: id, value: txtLoginid
+Wait until element is clickable, by: id, value: txtLoginid
+Element found: by-id, value-txtLoginid
+Values entered
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:txtPassword
+Wait until element is clickable, by: id, value: txtPassword
+Wait until element is visible, by: id, by_target: txtPassword
+Element is visible, by: id, value: txtPassword
+Wait until element is clickable, by: id, value: txtPassword
+Element found: by-id, value-txtPassword
+Values entered
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:btnloginText
+Wait until element is clickable, by: id, value: btnloginText
+Wait until element is visible, by: id, by_target: btnloginText
+Element is visible, by: id, value: btnloginText
+Wait until element is clickable, by: id, value: btnloginText
+Element found: by-id, value-btnloginText
+Element Clicked
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:aSlideMenuSelModuleOP101
+Wait until element is clickable, by: id, value: aSlideMenuSelModuleOP101
+Wait until element is visible, by: id, by_target: aSlideMenuSelModuleOP101
+Element is visible, by: id, value: aSlideMenuSelModuleOP101
+Wait until element is clickable, by: id, value: aSlideMenuSelModuleOP101
+Element found: by-id, value-aSlideMenuSelModuleOP101
+Wait until element is invisible, by: class name, by_target: modalOverlay
+Element found: by-class name, value-modalOverlay
+Element found: by-class name, value-modalOverlay
+Element found: by-class name, value-modalOverlay
+Element found: by-class name, value-modalOverlay
+Element found: by-class name, value-modalOverlay
+Element found: by-class name, value-modalOverlay
+Element found: by-class name, value-modalOverlay
+Element found: by-class name, value-modalOverlay
+Element found: by-class name, value-modalOverlay
+Element found: by-class name, value-modalOverlay
+Element found: by-class name, value-modalOverlay
+----------Listening: exception occurred----------
+Message: Unable to locate element: .modalOverlay
+
+Element Clicked
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:aOPModuleWorkplans
+Wait until element is clickable, by: id, value: aOPModuleWorkplans
+Wait until element is visible, by: id, by_target: aOPModuleWorkplans
+Element is visible, by: id, value: aOPModuleWorkplans
+Wait until element is clickable, by: id, value: aOPModuleWorkplans
+Element found: by-id, value-aOPModuleWorkplans
+Element Clicked
+------------------------------------------------------------------------------------------------
+Wait until element is clickable, by: xpath, value: //span[contains(text(),"Standard Reports")]
+Wait until element is visible, by: xpath, by_target: //span[contains(text(),"Standard Reports")]
+Element is visible, by: xpath, value: //span[contains(text(),"Standard Reports")]
+Wait until element is clickable, by: xpath, value: //span[contains(text(),"Standard Reports")]
+Element found: by-xpath, value-//span[contains(text(),"Standard Reports")]
+Element Clicked
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:txtSearch
+Wait until element is clickable, by: id, value: txtSearch
+Wait until element is visible, by: id, by_target: txtSearch
+Element is visible, by: id, value: txtSearch
+Wait until element is clickable, by: id, value: txtSearch
+Element found: by-id, value-txtSearch
+Values entered
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:spnSearch
+Wait until element is clickable, by: id, value: spnSearch
+Wait until element is visible, by: id, by_target: spnSearch
+Element is visible, by: id, value: spnSearch
+Wait until element is clickable, by: id, value: spnSearch
+Element found: by-id, value-spnSearch
+Element Clicked
+------------------------------------------------------------------------------------------------
+Wait until element is clickable, by: partial link text, value: Coder Profile
+Wait until element is visible, by: partial link text, by_target: Coder Profile
+Element is visible, by: partial link text, value: Coder Profile
+Wait until element is clickable, by: partial link text, value: Coder Profile
+Element found: by-partial link text, value-Coder Profile
+Going to click report name
+Report name is clicked
+------------------------------------------------------------------------------------------------
+Wait until element is visible, by: id, by_target: dvCustomSearchPopup
+Wait until element is clickable, by: id, value: dvCustomSearchPopup
+Wait until element is visible, by: id, by_target: dvCustomSearchPopup
+Element is visible, by: id, value: dvCustomSearchPopup
+Wait until element is clickable, by: id, value: dvCustomSearchPopup
+Element found: by-id, value-dvCustomSearchPopup
+Element is visible, by: id, value: dvCustomSearchPopup
+Wait until element is clickable, by: id, value: btnViewReport
+Wait until element is clickable, by: id, value: btnViewReport
+Wait until element is visible, by: id, by_target: btnViewReport
+Element is visible, by: id, value: btnViewReport
+Wait until element is clickable, by: id, value: btnViewReport
+Element found: by-id, value-btnViewReport
+------------------------------------------------------------------------------------------------
+Find Element by:id, value:btnViewReport
+Wait until element is clickable, by: id, value: btnViewReport
+Wait until element is visible, by: id, by_target: btnViewReport
+Element is visible, by: id, value: btnViewReport
+Wait until element is clickable, by: id, value: btnViewReport
+Element found: by-id, value-btnViewReport
+Element Clicked
+------------------------------------------------------------------------------------------------
+Wait until report view window is open: Coder Profile=pass
+Wait until paged loaded fully---wait: 1s uninitialized
+Wait until paged loaded fully---wait: 2s loading
+Wait until paged loaded fully---wait: 3s interactive
+Wait until paged loaded fully---wait: 4s interactive
+Wait until paged loaded fully---wait: 5s interactive
+Wait until paged loaded fully---wait: 6s interactive
+Wait until paged loaded fully---wait: 7s interactive
+Wait until paged loaded fully---wait: 8s interactive
+Wait until paged loaded fully---wait: 9s interactive
+Wait until paged loaded fully---wait: 10s interactive
+Wait until paged loaded fully---wait: 11s interactive
+Wait until paged loaded fully---wait: 12s interactive
+Wait until paged loaded fully---wait: 13s interactive
+Wait until paged loaded fully---wait: 14s interactive
+Wait until paged loaded fully---wait: 15s interactive
+Wait until paged loaded fully---wait: 16s interactive
+Wait until paged loaded fully---wait: 17s interactive
+Wait until paged loaded fully---wait: 18s interactive
+Wait until paged loaded fully---wait: 19s interactive
+Wait until paged loaded fully---wait: 20s interactive
+Wait until paged loaded fully---wait: 21s interactive
+Wait until paged loaded fully---wait: 22s interactive
+Wait until paged loaded fully---wait: 23s interactive
+Wait until paged loaded fully---wait: 24s interactive
+Wait until paged loaded fully---wait: 25s interactive
+Wait until paged loaded fully---wait: 26s interactive
+Wait until paged loaded fully---wait: 27s interactive
+Wait until paged loaded fully---wait: 28s interactive
+Wait until paged loaded fully---wait: 29s interactive
+Wait until paged loaded fully---wait: 30s interactive
+Wait until paged loaded fully---wait: 31s interactive
+Wait until paged loaded fully---wait: 32s interactive
+Wait until paged loaded fully---wait: 33s complete
+Wait until report window title is: Coder Profile= Pass
