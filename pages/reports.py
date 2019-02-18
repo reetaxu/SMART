@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.remote import webelement
 from selenium.webdriver.support.events import EventFiringWebDriver
 from selenium.webdriver.common.by import By
-from common import settings, actions, smart_driver
+from common import settings, actions, smart_driver, statement
 from selenium.webdriver.common.action_chains import ActionChains
 from tools import common_tools
 from pages import login
@@ -28,19 +28,19 @@ class Reports(object):
         if report_name.startswith('IPEN'):
             standard_or_enterprise = 'enterprise'
             ip_or_op = 'IP'
-            report_name = report_name.lstrip('IPEN')
+            report_name = report_name[4:]
         elif report_name.startswith('IPST'):
             standard_or_enterprise = 'standard'
             ip_or_op = 'IP'
-            report_name = report_name.lstrip('IPST')
+            report_name = report_name[4:]
         elif report_name.startswith('OPST'):
             standard_or_enterprise = 'standard'
             ip_or_op = 'OP'
-            report_name = report_name.lstrip('OPST')
+            report_name = report_name[4:]
         elif report_name.startswith('OPEN'):
             ip_or_op = 'OP'
             standard_or_enterprise = 'enterprise'
-            report_name = report_name.lstrip('OPEN')
+            report_name = report_name[4:]
         else:
             pass
 
@@ -143,7 +143,7 @@ class Reports(object):
         if report_name == 'DRG Change Condition Detail':
             smart_pass = actions.wait_report_title_contains(self.driver, 'DRG Change Detail')
             self.assertIn('DRG Change Detail', container=self.driver.title,
-                          msg=report_name + settings.error_report_generate)
+                          msg=report_name + statement.error_occurred_report_generate)
             assert 'DRG Change Detail' in self.driver.title
         elif report_name == 'Top 50 Diagnoses by Present on Admission(POA)':
             smart_pass = actions.wait_report_title_contains(self.driver,
@@ -173,6 +173,10 @@ class Reports(object):
 
 
 class ReportAssist(object):
+    driver = ''
+
+    def __init__(self, driver):
+        self.driver = driver
 
     def handle_error_occur(self):
         pass
@@ -182,3 +186,8 @@ class ReportAssist(object):
 
     def handle_no_data(self):
         pass
+
+    def handle_no_default_filter(self, report_name):
+        pass
+
+

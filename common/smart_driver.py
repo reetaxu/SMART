@@ -30,7 +30,16 @@ class SmartEventFiringWebDriver(EventFiringWebDriver):
     def init_driver():
         common_tools.save_log(statement.start_to_init_browser)
         try:
-            driver = SmartEventFiringWebDriver(driver=webdriver.Firefox(timeout=settings.browser_launch),
+
+            profile = webdriver.FirefoxProfile()
+            profile.set_preference('browser.download.dir', 'c:\\')
+            profile.set_preference('browser.download.folderList', 2)
+            profile.set_preference('browser.download.manager.showWhenStarting', False)
+            profile.set_preference('browser.helperApps.neverAsk.saveToDisk', 'application/pdf')
+
+            driver_fire = webdriver.Firefox(timeout=settings.browser_launch,firefox_profile=profile)
+
+            driver = SmartEventFiringWebDriver(driver=driver_fire,
                                                event_listener=listener.SMART_Listener())
         except:
             common_tools.save_log(statement.start_to_init_browser_fail)

@@ -192,7 +192,6 @@ def save_reports_screenshot_as_html(result_report):
 
 
 def write_test_result_report_word(result_report):
-
     image_path = sys_tools.base_path + '\\auto_results\\screenshots\\' + result_report.screen_shot
     word_result_path = sys_tools.base_path + '\\auto_results\\test_results\\' + settings.test_result_file_name_word
     # image_path = '../auto_results/screenshots/' + result_report.screen_shot

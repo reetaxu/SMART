@@ -19,6 +19,7 @@ def wait_number_of_windows_to_be(driver, report):
         try:
             element = WebDriverWait(driver, settings.timeout).until(EC.number_of_windows_to_be(2))
             str_ = 'Wait until report view window is open: ' + report + '=pass'
+            print()
             common_tools.save_log(str_)
         except Exception as e:
             str_ = 'Wait until report view window is open: ' + report + '=Fail: ' + e.__str__()
@@ -33,11 +34,13 @@ def wait_report_title_contains(driver, report):
     smart_pass = error_occurred_handle(driver, report)
     if smart_pass:
         try:
+            str_ = 'Report window title contains: ' + driver.title
+            common_tools.save_log(str_)
             WebDriverWait(driver, settings.report_generate_timeout).until(EC.title_contains(report))
-            str_ = 'Wait until report window title is: ' + report + '= Pass'
+            str_ = 'Wait until report window title contains: ' + report + '= Pass'
             common_tools.save_log(str_)
         except Exception as e:
-            str_ = 'Wait until report window title is: ' + report + '= Fail: ' + e.__str__()
+            str_ = 'Wait until report window title contains: ' + report + '= Fail: ' + e.__str__()
             common_tools.save_log(str_)
             smart_pass = False
     else:
@@ -83,6 +86,8 @@ def wait_element_clickable(driver, by, by_target):
         element = WebDriverWait(driver, settings.timeout).until(
             EC.element_to_be_clickable((by, by_target))
         )
+        str_ = 'Element is clickable, by: {0}, value: {1}'.format(by, by_target)
+        common_tools.save_log(str_)
     except Exception as e:
         str_ = 'Wait until element is clickable: exception occurred, by: {0}, value: {1}'.format(by, by_target)
         common_tools.save_log(str_)

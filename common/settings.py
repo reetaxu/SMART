@@ -1,10 +1,9 @@
-timeout = 60
-login_timeout = 120
+timeout = 120
+login_timeout = 240
 browser_launch = 180
 page_load_timeout = 120
 report_generate_timeout = 120
-test_result_file_name = 'test result.docx'
+test_result_file_name = 'Test Result.docx'
 url = 'http://strzw058051/SMARTSolutions/'
-test_result_file_name_word = 'legacy reports auto test result.docx'
+test_result_file_name_word = 'Legacy Reports Auto Test Result.docx'
 log_print_switch = False
-
