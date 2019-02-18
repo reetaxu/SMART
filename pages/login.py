@@ -12,6 +12,7 @@ class Login(object):
 
     def login(self):
         self.driver.get(settings.url)
+        self.driver.maximize_window()
         login_ele = self.driver.find_element_(By.ID, 'txtLoginid')
         login_ele.send_keys(self.username)
         password_ele = self.driver.find_element_(By.ID, 'txtPassword')

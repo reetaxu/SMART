@@ -24,7 +24,6 @@ class MyTestCase(unittest.TestCase):
 
         print(common_tools.get_log('DRG Contribution to CMI'))
 
-
     def Itest_get_logs(self):
 
         logs = common_tools.get_logs()
@@ -55,8 +54,6 @@ class MyTestCase(unittest.TestCase):
 
         for i in report_names:
             print(i)
-
-
 
     def Itest_write_test_result_report_excel(self):
         test_result_report = result_report(report_name='test11', report_module='standard',

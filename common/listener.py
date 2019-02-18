@@ -33,13 +33,13 @@ class SMART_Listener(AbstractEventListener):
         common_tools.save_log(str_)
 
     def before_find(self, by, value, driver):
-        if 'modalOverlay' not in value:
-            actions.wait_element_clickable(driver=driver, by=by, by_target=value)
+        if value not in ['modalOverlay','dvSlidingMessageControl']:
+            # actions.wait_element_clickable(driver=driver, by=by, by_target=value)
             actions.wait_element_visibility(driver=driver, by=by, by_target=value)
 
     def after_find(self, by, value, driver):
         str_ = 'Element found: by-{0}, value-{1}'.format(by, value)
-        if 'modalOverlay' not in value:
+        if value not in ['modalOverlay', 'dvSlidingMessageControl']:
             actions.wait_element_clickable(driver=driver, by=by, by_target=value)
         common_tools.save_log(str_)
         pass

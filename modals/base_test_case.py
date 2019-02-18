@@ -4,7 +4,6 @@ from common import settings
 
 
 class BaseTestCase(unittest.TestCase):
-
     test_result = 'Pass'
 
     def setUp(self):
